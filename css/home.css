@@ -81,7 +81,7 @@ li.car_show_item:last-child { border: none; }
 a.car_show_link { display: block; overflow: hidden; margin: 0.3906rem 0; }
 div.car_show_img { width: 3.75rem; height:2.5rem; float: left; margin-right: 0.2344rem; }
 div.car_show_img img { width: 100%; height: 100%; }
-a.car_show_link>h3 { color: #495056; font-size: 14px; }
+a.car_show_link>h3 { color: #495056; font-size: 14px; line-height: 0.5625rem; }
 [data-dpr="2"] a.car_show_link>h3 { font-size: 28px; }
 [data-dpr="3"] a.car_show_link>h3 { font-size: 52px; }
 a.car_show_link>p { margin-top: 0.0625rem; color: #757f89; font-size: 12px; 
