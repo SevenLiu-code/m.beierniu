@@ -1,0 +1,38 @@
+body { background-color: #ececec; }
+/*mobile头部公用*/
+header { overflow: hidden; padding: 0.281rem 0.468rem; background-color: #ececec; } 
+header .h_logo { float: left; width: 1.3281rem; height: 0.6875rem;
+				background: url(../images/base/h_logo.png) no-repeat center center;
+				margin: 0.156rem 0.4rem 0 0; background-size: 100%; }
+header .h_city { float: left; line-height: 0.938rem;
+				color: #595757; font-size: 14px; }
+[data-dpr="2"] header .h_city { font-size: 28px; }
+[data-dpr="3"] header .h_city { font-size: 42px; }				
+header .h_city>span {  }				
+header .h_search_box { float: right; width: 5.875rem; height: 0.938rem;
+					padding-left: 0.406rem;line-height: 0.938rem; color: #b4b4b4;
+					border: 1px solid #b4b4b4; background-color: #fff; 
+					border-radius: 0.0938rem;  }
+header .h_search_box>span { font-size: 16px; }	
+[data-dpr="2"] header .h_search_box>span { font-size: 32px; }
+[data-dpr="3"] header .h_search_box>span { font-size: 48px; }				
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
