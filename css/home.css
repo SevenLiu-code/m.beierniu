@@ -105,7 +105,7 @@ a.car_show_link>.car_show_price>span { color: #bec6ce; text-decoration: line-thr
 footer { padding: 0.625rem 0.4688rem;  }
 .footer_list { display: flex; display: -webkit-flex; margin-bottom: 0.4688rem; }
 .footer_list>li { width: 25%; text-align: center;  }
-.footer_list>li a { padding: 0.085rem 0.2344rem 0.125rem 0.2344rem; 
+.footer_list>li a { padding: 0.085rem 0.2344rem; 
 	font-size: 0.375rem; border-radius: 0.0938rem; color: #757f89; }
 .footer_list>li.current a { background-color: #d10310; color: #fff; }
 footer p { text-align: center; margin: 0.1562rem 0; color: #757f89; }
