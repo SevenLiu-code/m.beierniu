@@ -15,7 +15,7 @@ header.head_index a.h_city>span { display: inline-block;
 [data-dpr="3"] header a.h_city { font-size: 36px; }								
 header.head_index .h_search_box { float: right; width: 5.875rem; height: 0.9rem;
 					padding-left: 0.625rem;line-height: 0.9rem; color: #b4b4b4;
-					border: 0.0156rem solid #b4b4b4; background-color: #fff; 
+					border: 1px solid #b4b4b4; background-color: #fff; 
 					border-radius: 0.0938rem; }
 header.head_index .h_search_box>span { width: 0.4688rem; height: 0.4688rem;
 			background: url(../images/base/search_icon.png) no-repeat;
