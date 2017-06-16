@@ -30,7 +30,7 @@ p._set_price_text { padding: 0.1562rem .4688rem 0 .4688rem; background-color: #f
 div.filter_set_price { align-items: center; padding: .2rem 0.4688rem .3rem .4688rem;
 			display: flex; display: -webkit-flex; background-color: #fff; }
 
-div.input_price_box { border: 1px solid #d1d1d1; color: #666;
+div.input_price_box { border: 1px solid #d1d1d1; color: #666; height: .9375rem;
 			 background-color: #fff; padding-right: .1rem; }
 div.input_price_box>input { width: 2.2rem; height: .9375rem; padding: 0 .1rem;
 	 border: none; text-align: right;  }
