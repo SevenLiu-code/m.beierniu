@@ -9,7 +9,7 @@ header.head_index .h_logo { width: 1.3281rem; height: 0.6875rem;
 				margin-right: 0.3rem; background-size: 100%; }
 header.head_index a.h_city { line-height: 0.938rem; margin-right: .25rem;
 				color: #495056; font-size: 12px; }
-header.head_index a.h_city>span { display: inline-block; vertical-align: -0.05rem;
+header.head_index a.h_city>span { display: inline-block; vertical-align: -0.08rem;
 	font-size: 0.4375rem; padding-left: 0.0781rem; }				
 [data-dpr="2"] header a.h_city { font-size: 24px; }
 [data-dpr="3"] header a.h_city { font-size: 36px; }								
