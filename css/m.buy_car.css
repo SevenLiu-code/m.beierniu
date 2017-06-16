@@ -1,21 +1,48 @@
 /*条件筛选*/
-div.filter { margin-top: 0.3125rem; }
+div.filter { margin-top: .3125rem; }
 nav.filter_nav { display: flex; display: -webkit-flex; 
-	 padding: 0.3125rem 0; background-color: #fff; }
+	 background-color: #fff; }
 nav.filter_nav>a { display: block; width: 25%; text-align: center; 
-		color: #252825;  line-height: 0.4688rem;}
+		color: #252825; line-height: 1.4rem; 
+		border-bottom: .0469rem solid #fff; }
+nav.filter_nav>a.current { color: #d10310; border-bottom-color: #d10310;  }
 div.filter a { font-size: 14px; }		
 [data-dpr="2"] div.filter a { font-size: 28px; }
 [data-dpr="3"] div.filter a { font-size: 42px; }
 
-nav.filter_nav>a>i { margin-left: 0.0781rem; }	
+nav.filter_nav>a>i { margin-left: .0781rem; }	
 div.filter_line{ border-bottom: 1px solid #e6e6e6; }
-/*排序*/
-div.filter_sort_list { background-color: #fff; }
-div.filter_sort_list li { padding: 0 0.7812rem; border-bottom: 1px solid #e6e6e6; }
-div.filter_sort_list li>a { display: block; color: #252825; line-height: 1.375rem; 
+div.filter_details { font-size: 14px; }
+[data-dpr="2"] div.filter_details { font-size: 28px; }
+[data-dpr="3"] div.filter_details { font-size: 42px; }
+/*排序筛选*/
+ul.filter_sort_list { display: none; background-color: #fff; }
+ul.filter_sort_list li { padding: 0 .7812rem; border-bottom: 1px solid #e6e6e6; }
+ul.filter_sort_list li>a { display: block; color: #252825; line-height: 1.375rem; 
 		 }
-div.filter_sort_list li>a>i { margin-left:  6rem; display: none;
-	font-size: 0.4375rem; }		
-div.filter_sort_list li.current>a { color: #d10310; }
-div.filter_sort_list li.current>a>i { display: inline; }
+ul.filter_sort_list li>a>i { margin-left:  6rem; display: none; }		
+ul.filter_sort_list li.current>a { color: #d10310; }
+ul.filter_sort_list li.current>a>i { display: inline; }
+/*价格筛选*/
+
+p._set_price_text { padding: 0.1562rem .4688rem 0 .4688rem; background-color: #fff;
+				line-height: 1rem; }
+div.filter_set_price { align-items: center; padding: .2rem 0.4688rem .3rem .4688rem;
+			display: flex; display: -webkit-flex; background-color: #fff; }
+
+div.input_price_box { border: 1px solid #d1d1d1; 
+			 background-color: #fff; padding-right: .1rem; }
+div.input_price_box>input { width: 2.2rem; height: .9375rem; padding: 0 .1rem;
+	 border: none; text-align: right;  }
+div.filter_set_price button { width: 2.4rem; height: .9688rem; border: none;
+ background-color: #d10310; color: #fff; font-size: .4062rem;
+		margin-left: .3125rem; }
+div._set_price_line { margin: 0 .08rem; }
+ul.filter_price_list { margin-top: .3125rem; overflow: hidden;
+		padding-top: 0.3125rem; background-color: #fff; }
+ul.filter_price_list>li { float: left; width: 33.333%; margin: 0.2344rem 0; }
+ul.filter_price_list>li>a { display: block; width: 2.625rem; 
+	margin: 0 auto; height: 40px; line-height: 40px;
+	border: 1px solid #d1d1d1; text-align: center; color: #252825; }
+[data-dpr="2"] ul.filter_price_list>li>a { height: 80px; line-height: 80px; }
+[data-dpr="3"] ul.filter_price_list>li>a { height: 120px; line-height: 120px; }
