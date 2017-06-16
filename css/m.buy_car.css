@@ -24,25 +24,34 @@ ul.filter_sort_list li>a>i { margin-left:  6rem; display: none; }
 ul.filter_sort_list li.current>a { color: #d10310; }
 ul.filter_sort_list li.current>a>i { display: inline; }
 /*价格筛选*/
-
-p._set_price_text { padding: 0.1562rem .4688rem 0 .4688rem; background-color: #fff;
-				line-height: 1rem; }
-div.filter_set_price { align-items: center; padding: .2rem 0.4688rem .3rem .4688rem;
-			display: flex; display: -webkit-flex; background-color: #fff; }
+div.filter_price_con { display: none; }
+dt.filter_details_tit { padding: 0.1562rem .4688rem 0 .4688rem; background-color: #fff;
+				line-height: 1rem; font-size: 0.375rem;  }
+dl.filter_details_kind dd { margin-bottom: .3125rem; }				
+dd.filter_set_price { align-items: center; padding: .2rem 0.4688rem .3rem .4688rem;
+			display: flex; display: -webkit-flex; margin-bottom: .3125rem;
+			 background-color: #fff; }
 
 div.input_price_box { border: 1px solid #d1d1d1; color: #666; height: .9375rem;
-			 background-color: #fff; padding-right: .1rem; }
+			 background-color: #fff; padding-right: .1rem; font-size: 0.375rem; }
 div.input_price_box>input { width: 2.2rem; height: .9375rem; padding: 0 .1rem;
 	 border: none; text-align: right;  }
-div.filter_set_price button { width: 2.4rem; height: .9688rem; border: none;
+dd.filter_set_price button { width: 2.4rem; height: .9688rem; border: none;
  background-color: #d10310; color: #fff; font-size: .4062rem;
-		margin-left: .3125rem; }
+		margin-left: .32rem; }
 div._set_price_line { margin: 0 .08rem; }
-ul.filter_price_list { margin-top: .3125rem; overflow: hidden;
-		padding-top: 0.3125rem; background-color: #fff; }
-ul.filter_price_list>li { float: left; width: 33.333%; margin: 0.2344rem 0; }
-ul.filter_price_list>li>a { display: block; width: 2.625rem; 
-	margin: 0 auto; height: 40px; line-height: 40px;
+div.filter_list_con ul {  overflow: hidden; background-color: #fff; }
+ul.filter_details_list {  overflow: hidden; background-color: #fff; }
+ul.filter_details_list>li { float: left; width: 33.333%; margin: 0.2344rem 0; }
+ul.filter_details_list>li>a { display: block; width: 2.8rem; 
+	margin: 0 auto; height: 40px; line-height: 40px; height: 40px;
 	border: 1px solid #d1d1d1; text-align: center; color: #666; }
-[data-dpr="2"] ul.filter_price_list>li>a { height: 80px; line-height: 80px; }
-[data-dpr="3"] ul.filter_price_list>li>a { height: 120px; line-height: 120px; }
+[data-dpr="2"] ul.filter_details_list>li>a { height: 80px; line-height: 80px; }
+[data-dpr="3"] ul.filter_details_list>li>a { height: 120px; line-height: 120px; }
+div.filter_more { margin-bottom: 1.6rem; }
+/*更多筛选按钮*/
+ul.filter_more_btn { position: fixed; height: 1.3rem; bottom: 0;left: 0; right: 0;
+				display: flex; display: -webkit-flex; text-align: center;
+				font-size: 0.4375rem; line-height: 1.3rem; }
+ul.filter_more_btn>li.filter_reset { width: 40%; background-color: #fff;   }
+ul.filter_more_btn>li.filter_found { width: 60%; background-color: #d10310; color: #fff; }
