@@ -1,0 +1,92 @@
+html { /*background-color: #f5f5f5;*/ background-color: #fff; }
+body { background-color: #f5f5f5; }
+/*mobile头部公用*/
+header.head_index { overflow: hidden; display: flex; display: -webkit-flex;
+		 align-items: center; padding: 0.281rem 0.468rem; 
+		 background-color: #ececec; background-color: #fff; } 
+header.head_index .h_logo { width: 1.3281rem; height: 0.6875rem;
+				background: url(../images/base/h_logo.png) no-repeat center center;
+				margin-right: 0.3rem; background-size: 100%; }
+header.head_index a.h_city { line-height: 0.938rem; margin-right: .25rem;
+				color: #495056; font-size: 12px; }
+header.head_index a.h_city>span { display: inline-block;
+	font-size: 0.4375rem; padding-left: 0.0781rem; }				
+[data-dpr="2"] header a.h_city { font-size: 24px; }
+[data-dpr="3"] header a.h_city { font-size: 36px; }								
+header.head_index .h_search_box { float: right; width: 5.875rem; height: 0.938rem;
+					padding-left: 0.625rem;line-height: 0.938rem; color: #b4b4b4;
+					border: 0.0156rem solid #b4b4b4; background-color: #fff; 
+					border-radius: 0.0938rem; }
+header.head_index .h_search_box>span { width: 0.4688rem; height: 0.4688rem;
+			background: url(../images/base/search_icon.png) no-repeat;
+			background-size: 100%;
+			position: absolute; margin: 0.22rem 0 0 -0.32rem; }					
+/*搜索框输入开始*/
+div.search_input_con { display: none; background-color: #f5f5f5; }
+a.search_input_close { padding: 0 0.1562rem; color: #d10310; font-size: 0.375rem; }
+div.search_input_bar { display: flex; display: -webkit-flex; padding: 0.2344rem 0.4rem;
+				align-items: center; background-color: #fff; }
+div.search_input_bar .search_input_box { background-color: #fff; margin-left: 0.2344rem; 
+						border-radius: 0.1rem; border: 0.0156rem solid #b4b4b4;	}
+ div.search_input_box>input { border: none; outline: 0; font-size: 0.375rem; 
+ 				 padding: 0.18rem 0.32rem; width: 6.2rem; border-radius: 0.1rem; }
+ div.search_input_box span.input_clean { position: absolute; right: 1.875rem;
+ 	top: 0.49rem; color: #8a8a8a; font-size: 0.375rem;  }
+ form.h_search_form { display: flex; display: -webkit-flex; align-items: center; }
+ form.h_search_form>button { margin-left: 0.3rem; 
+ 			width: 0.4688rem; height: 0.4688rem;
+			background: transparent url(../images/base/search_icon.png) no-repeat;
+			background-size: 100%; padding-left: 0.3125rem; }
+div.search_input_con p.search_hot { margin: 0.3125rem 0; font-size: 0.375rem;
+				 padding: 0 0.4rem; color: #555; } 
+ ul.search_hot_list { overflow: hidden; padding: 0.2rem 0.4rem; }				
+ ul.search_hot_list>li { float: left; width: 25%; text-align: center;
+ 						margin-bottom: 0.4rem; }					
+ ul.search_hot_list>li>a { display: block; width: 1.8rem; height: 1rem;
+		line-height: 1rem; font-size: 0.375rem; color: #404040;
+		background-color: #fff;
+		border: 0.0156rem solid #e1e1e1; margin: 0 0.25rem; border-radius: 0.07rem; }
+
+/*车辆列表*/	
+ul.car_show_tit>li { width: 33.333%; text-align: center;  }
+ul.car_show_tit>li>a { display: inline-block;  color: #495056;
+	padding: 0 0.0781rem 0.1562rem 0.0781rem; font-size: 0.4375rem; }
+/*[data-dpr="2"] ul.car_show_tit>li>a { font-size: 28px; }
+[data-dpr="3"] ul.car_show_tit>li>a { font-size: 42px; }*/
+ul.car_show_tit>li>a.current { border-bottom: 0.0625rem solid #d10310; }
+li.car_show_item { padding: 0 0.4688rem; border-bottom: 1px solid #d8d8d8; }
+li.car_show_item:last-child { border: none; }
+a.car_show_link { display: block; overflow: hidden; margin: 0.3906rem 0; }
+div.car_show_img { width: 3.75rem; height:2.5rem; float: left; margin-right: 0.2344rem; }
+div.car_show_img img { width: 100%; height: 100%; }
+a.car_show_link>h3 { color: #495056; font-size: 0.4062rem; line-height: 0.5625rem; }
+/*[data-dpr="2"] a.car_show_link>h3 { font-size: 28px; }
+[data-dpr="3"] a.car_show_link>h3 { font-size: 52px; }*/
+a.car_show_link>p { margin-top: 0.0625rem; color: #757f89; font-size: 12px; 
+					display: flex; display: -webkit-flex; justify-content: space-between; }					
+/*[data-dpr="2"] a.car_show_link>p { font-size: 24px; }
+[data-dpr="3"] a.car_show_link>p { font-size: 36px; }*/
+a.car_show_link>p.car_show_mil { margin-top: 0.05rem; font-size: 0.375rem;
+				line-height: 0.56rem; }
+a.car_show_link>p>span.l_price { background-color: #26b829; color: #fff;
+					margin-right: 0.625rem; padding: 0 0.0625rem; }
+a.car_show_link>.car_show_price { display: flex; display: -webkit-flex; 
+		align-items: baseline; margin-top: 0.15rem; line-height: 0.6562rem; }
+a.car_show_link>.car_show_price>strong { font-size: 0.5rem; font-weight: 500; color: #d10310;
+							margin-right: 0.4688rem; }
+/*[data-dpr="2"] a.car_show_link>.car_show_price>strong { font-size: 32px; }
+[data-dpr="3"] a.car_show_link>.car_show_price>strong { font-size: 48px; }*/
+a.car_show_link>.car_show_price>span { color: #bec6ce; text-decoration: line-through; 
+							font-size: 0.375rem;}
+
+
+
+
+
+
+
+
+
+
+
+
