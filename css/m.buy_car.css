@@ -30,7 +30,7 @@ p._set_price_text { padding: 0.1562rem .4688rem 0 .4688rem; background-color: #f
 div.filter_set_price { align-items: center; padding: .2rem 0.4688rem .3rem .4688rem;
 			display: flex; display: -webkit-flex; background-color: #fff; }
 
-div.input_price_box { border: 1px solid #d1d1d1; 
+div.input_price_box { border: 1px solid #d1d1d1; color: #666;
 			 background-color: #fff; padding-right: .1rem; }
 div.input_price_box>input { width: 2.2rem; height: .9375rem; padding: 0 .1rem;
 	 border: none; text-align: right;  }
@@ -43,6 +43,6 @@ ul.filter_price_list { margin-top: .3125rem; overflow: hidden;
 ul.filter_price_list>li { float: left; width: 33.333%; margin: 0.2344rem 0; }
 ul.filter_price_list>li>a { display: block; width: 2.625rem; 
 	margin: 0 auto; height: 40px; line-height: 40px;
-	border: 1px solid #d1d1d1; text-align: center; color: #252825; }
+	border: 1px solid #d1d1d1; text-align: center; color: #666; }
 [data-dpr="2"] ul.filter_price_list>li>a { height: 80px; line-height: 80px; }
 [data-dpr="3"] ul.filter_price_list>li>a { height: 120px; line-height: 120px; }
