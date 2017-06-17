@@ -1,0 +1,5 @@
+div.car_detail_head { position: absolute; padding: 0 0.4688rem; }
+div.car_detail_head>a { display: block; width: 1rem; height: 1rem; 
+	background-color: rgba(0,0,0,.4); color: #fff; text-align: center;
+	font-size: .9rem; border-radius: 50%;  }
+div.car_d_img_con { position: relative;  }

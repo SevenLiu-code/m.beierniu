@@ -10,239 +10,29 @@
 	<link rel="stylesheet" type="text/css" href="./css/m.common.css">
 	<link rel="stylesheet" type="text/css" href="./css/m.home.css">
 	<link rel="stylesheet" type="text/css" href="./css/m.buy_car.css">
+	<link rel="stylesheet" type="text/css" href="./css/m.car_detail.css">
 	<script type="text/javascript">
 		!function(N,M){function L(){var a=I.getBoundingClientRect().width;a/F>540&&(a=540*F);var d=a/10;I.style.fontSize=d+"px",D.rem=N.rem=d}var K,J=N.document,I=J.documentElement,H=J.querySelector('meta[name="viewport"]'),G=J.querySelector('meta[name="flexible"]'),F=0,E=0,D=M.flexible||(M.flexible={});if(H){console.warn("将根据已有的meta标签来设置缩放比例");var C=H.getAttribute("content").match(/initial\-scale=([\d\.]+)/);C&&(E=parseFloat(C[1]),F=parseInt(1/E))}else{if(G){var B=G.getAttribute("content");if(B){var A=B.match(/initial\-dpr=([\d\.]+)/),z=B.match(/maximum\-dpr=([\d\.]+)/);A&&(F=parseFloat(A[1]),E=parseFloat((1/F).toFixed(2))),z&&(F=parseFloat(z[1]),E=parseFloat((1/F).toFixed(2)))}}}if(!F&&!E){var y=N.navigator.userAgent,x=(!!y.match(/android/gi),!!y.match(/iphone/gi)),w=x&&!!y.match(/OS 9_3/),v=N.devicePixelRatio;F=x&&!w?v>=3&&(!F||F>=3)?3:v>=2&&(!F||F>=2)?2:1:1,E=1/F}if(I.setAttribute("data-dpr",F),!H){if(H=J.createElement("meta"),H.setAttribute("name","viewport"),H.setAttribute("content","initial-scale="+E+", maximum-scale="+E+", minimum-scale="+E+", user-scalable=no"),I.firstElementChild){I.firstElementChild.appendChild(H)}else{var u=J.createElement("div");u.appendChild(H),J.write(u.innerHTML)}}N.addEventListener("resize",function(){clearTimeout(K),K=setTimeout(L,300)},!1),N.addEventListener("pageshow",function(b){b.persisted&&(clearTimeout(K),K=setTimeout(L,300))},!1),"complete"===J.readyState?J.body.style.fontSize=12*F+"px":J.addEventListener("DOMContentLoaded",function(){J.body.style.fontSize=12*F+"px"},!1),L(),D.dpr=N.dpr=F,D.refreshRem=L,D.rem2px=function(d){var c=parseFloat(d)*this.rem;return"string"==typeof d&&d.match(/rem$/)&&(c+="px"),c},D.px2rem=function(d){var c=parseFloat(d)/this.rem;return"string"==typeof d&&d.match(/px$/)&&(c+="rem"),c}}(window,window.lib||(window.lib={}));
 	</script>
 	<script type="text/javascript" src="./js/m.common.js"></script>
 </head>
 <body>
-	<header class="head_index">
-		<a href="" class="h_logo"></a>
-		<a href="javascript:;" class="h_city">无锡<span class="icon-angle-down"></span></a>
-		<div class="h_search_box box_s">
-			<span class=""></span>&nbsp;&nbsp;&nbsp;搜索您想要的车
+	<section class="car_detail">
+		<div class="car_detail_head">
+			<a href="" class="icon-angle-left"></a>
 		</div>
-	</header>
-	<!-- 搜索框输入开始 -->
-	<div class="search_input_con">
-		<div class="search_input_bar">
-			<a class="search_input_close" href="javascript:;">取消</a>
-			<form class="h_search_form">
-				<div class="search_input_box">
-					<input type="" name="" placeholder="请输入品牌/车系">
-					<span class="input_clean icon-x"></span>
-				</div>
-				<button type="submit"></button>
-			</form>	
-		</div>
-		<p class="search_hot">热门搜索：</p>
-		<ul class="search_hot_list">
-			<li>
-				<a href="">大众</a>
-			</li>
-			<li>
-				<a href="">本田</a>
-			</li>
-			<li>
-				<a href="">丰田</a>
-			</li>
-			<li>
-				<a href="">别克</a>
-			</li>
-			<li>
-				<a href="">5万以内</a>
-			</li>
-			<li>
-				<a href="">5-10万</a>
-			</li>
-			<li>
-				<a href="">10-15万</a>
-			</li>
-			<li>
-				<a href="">15-10万</a>
-			</li>
-			<li>
-				<a href="">轿车</a>
-			</li>
-			<li>
-				<a href="">跑车</a>
-			</li>
-			<li>
-				<a href="">SUV</a>
-			</li>
-			<li>
-				<a href="">MPV</a>
-			</li>	
-		</ul>
-	</div>
-	<!-- 搜索框输入结束 -->
-	<!-- 条件筛选开始 -->
-	<div class="filter">
-		<nav class="filter_nav">
-			<a href="">品牌<i class="icon-angle-down"></i></a>
-			<a href="">价格<i class="icon-angle-down"></i></a>
-			<a href="">筛选<i class="icon-angle-down"></i></a>
-			<a href="" class="current">排序<i class="icon-angle-down"></i></a>
-		</nav>
-		<div class="filter_line"></div>
-		<div class="filter_list_con">
-			<div class="filter_details">
-				<ul class="filter_sort_list">
-					<li class="current"><a href="">默认排序 <i class="icon-checkmark"></i></a></li>
-					<li><a href="">最新上架<i class="icon-checkmark"></i></a></li>
-					<li><a href="">价格最高<i class="icon-checkmark"></i></a></li>
-					<li><a href="">价格最低<i class="icon-checkmark"></i></a></li>
-					<li><a href="">里程最少<i class="icon-checkmark"></i></a></li>
-					<li><a href="">车龄最短<i class="icon-checkmark"></i></a></li>
-				</ul>
-			</div>
-			<div class="filter_details filter_price_con">
-				<dl class="filter_details_kind">
-					<dt class="filter_details_tit">自定义价格</dt>
-					<dd class="filter_set_price">
-						<div class="input_price_box input_1">
-							<input type="text" maxlength="4">万
-						</div>
-						<div class="_set_price_line">-</div>
-						<div class="input_price_box input_2">
-							<input type="text" maxlength="4">万
-						</div>
-						<button>确定</button>
-					</dd>
-				</dl>
-				<ul class="filter_price_list filter_details_list">
-					<li><a href="">不限</a></li>
-					<li><a href="">3万以下</a></li>
-					<li><a href="">3-5万</a></li>
-					<li><a href="">5-7万</a></li>
-					<li><a href="">7-9万</a></li>
-					<li><a href="">9-12万</a></li>
-					<li><a href="">12万-16万</a></li>
-					<li><a href="">16万-20万</a></li>
-					<li><a href="">20万以上</a></li>
-				</ul>
-			</div>
-		</div>
-		<div class="current_filter">
-			<ul class="current_filter_list">
-				<li class="current_filter_item">
-					<a href="">大众<i class="icon-x2"></i></a>
-				</li>
-				<li class="current_filter_item">
-					<a href="">速腾<i class="icon-x2"></i></a>
-				</li>
-				<li class="current_filter_item">
-					<a href="">3年以下<i class="icon-x2"></i></a>
-				</li>
-				<li class="current_filter_item">
-					<a href="">自动<i class="icon-x2"></i></a>
+		<!-- 图片轮播 -->
+		<div class="car_d_img_con">
+			<ul class="_img_slide">
+				<li>
+					<img src="./images/test/kdlk.jpg" alt="">
 				</li>
 			</ul>
-			<div class="current_filter_reset">
-				<i class="icon-spinner11"></i>&nbsp;重置
+			<div class="_img_counts_box">
+				<span class="_img_count_bg"></span>
+				<span class="_img_counts_on"></span>/<i class="_img_counts">30</i>
 			</div>
 		</div>
-	</div>
-	<div class="car_show_main_box buy_car_show">
-		<ul class="car_show_main">
-			<li class="car_show_item">
-				<a href="" class="car_show_link">
-					<div class="car_show_img">
-						<img src="./images/test/qihu.jpg" alt="">
-					</div>
-					<h3>奇瑞瑞虎5 2016款 1.5T 手动家悦信赖版</h3>
-					<p class="car_show_mil">2016年/2万公里</p>
-					<div class="car_show_price">
-						<strong>7.60万</strong><span>11.71万</span>
-					</div>
-				</a>
-			</li>
-			<li class="car_show_item">
-				<a href="" class="car_show_link">
-					<div class="car_show_img">
-						<img src="./images/test/qihu.jpg" alt="">
-					</div>
-					<h3>奇瑞瑞虎5 2016款 1.5T 手动家悦信赖版</h3>
-					<p class="car_show_mil">2016年/2万公里 <span class="l_price">可砍价</span></p>
-					<div class="car_show_price">
-						<strong>7.60万</strong><span>11.71万</span>
-					</div>
-				</a>
-			</li>
-			<li class="car_show_item">
-				<a href="" class="car_show_link">
-					<div class="car_show_img">
-						<img src="./images/test/qihu.jpg" alt="">
-					</div>
-					<h3>奇瑞瑞虎5 2016款 1.5T 手动家悦信赖版</h3>
-					<p class="car_show_mil">2016年/2万公里</p>
-					<div class="car_show_price">
-						<strong>7.60万</strong><span>11.71万</span>
-					</div>
-				</a>
-			</li>
-			<li class="car_show_item">
-				<a href="" class="car_show_link">
-					<div class="car_show_img">
-						<img src="./images/test/qihu.jpg" alt="">
-					</div>
-					<h3>奇瑞瑞虎5 2016款 1.5T 手动家悦信赖版</h3>
-					<p class="car_show_mil">2016年/2万公里</p>
-					<div class="car_show_price">
-						<strong>7.60万</strong><span>11.71万</span>
-					</div>
-				</a>
-			</li>
-			<li class="car_show_item">
-				<a href="" class="car_show_link">
-					<div class="car_show_img">
-						<img src="./images/test/qihu.jpg" alt="">
-					</div>
-					<h3>奇瑞瑞虎5 2016款 1.5T 手动家悦信赖版</h3>
-					<p class="car_show_mil">2016年/2万公里</p>
-					<div class="car_show_price">
-						<strong>7.60万</strong><span>11.71万</span>
-					</div>
-				</a>
-			</li>
-			<li class="car_show_item">
-				<a href="" class="car_show_link">
-					<div class="car_show_img">
-						<img src="./images/test/qihu.jpg" alt="">
-					</div>
-					<h3>奇瑞瑞虎5 2016款 1.5T 手动家悦信赖版</h3>
-					<p class="car_show_mil">2016年/2万公里 <span class="l_price">可砍价</span></p>
-					<div class="car_show_price">
-						<strong>7.60万</strong><span>11.71万</span>
-					</div>
-				</a>
-			</li>
-			<li class="car_show_item">
-				<a href="" class="car_show_link">
-					<div class="car_show_img">
-						<img src="./images/test/qihu.jpg" alt="">
-					</div>
-					<h3>奇瑞瑞虎5 2016款 1.5T 手动家悦信赖版</h3>
-					<p class="car_show_mil">2016年/2万公里</p>
-					<div class="car_show_price">
-						<strong>7.60万</strong><span>11.71万</span>
-					</div>
-				</a>
-			</li>
-			<li class="car_show_item">
-				<a href="" class="car_show_link">
-					<div class="car_show_img">
-						<img src="./images/test/qihu.jpg" alt="">
-					</div>
-					<h3>奇瑞瑞虎5 2016款 1.5T 手动家悦信赖版</h3>
-					<p class="car_show_mil">2016年/2万公里</p>
-					<div class="car_show_price">
-						<strong>7.60万</strong><span>11.71万</span>
-					</div>
-				</a>
-			</li>
-		</ul>
-	</div>
-	<!-- 条件筛选结束 -->
+	</section>
 </body>
 </html>
