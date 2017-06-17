@@ -16,183 +16,76 @@
 	<script type="text/javascript" src="./js/m.common.js"></script>
 </head>
 <body>
-	<header class="head_index">
-		<a href="" class="h_logo"></a>
-		<a href="javascript:;" class="h_city">无锡<span class="icon-angle-down"></span></a>
-		<div class="h_search_box box_s">
-			<span class=""></span>&nbsp;&nbsp;&nbsp;搜索您想要的车
-		</div>
+	<header class="filter_more_head">
+		<a href="./m.buy_car.html" class="icon-angle-left"></a>
+		<p>筛选</p>
 	</header>
-	<!-- 搜索框输入开始 -->
-	<div class="search_input_con">
-		<div class="search_input_bar">
-			<a class="search_input_close" href="javascript:;">取消</a>
-			<form class="h_search_form">
-				<div class="search_input_box">
-					<input type="" name="" placeholder="请输入品牌/车系">
-					<span class="input_clean icon-x"></span>
-				</div>
-				<button type="submit"></button>
-			</form>	
-		</div>
-		<p class="search_hot">热门搜索：</p>
-		<ul class="search_hot_list">
-			<li>
-				<a href="">大众</a>
-			</li>
-			<li>
-				<a href="">本田</a>
-			</li>
-			<li>
-				<a href="">丰田</a>
-			</li>
-			<li>
-				<a href="">别克</a>
-			</li>
-			<li>
-				<a href="">5万以内</a>
-			</li>
-			<li>
-				<a href="">5-10万</a>
-			</li>
-			<li>
-				<a href="">10-15万</a>
-			</li>
-			<li>
-				<a href="">15-10万</a>
-			</li>
-			<li>
-				<a href="">轿车</a>
-			</li>
-			<li>
-				<a href="">跑车</a>
-			</li>
-			<li>
-				<a href="">SUV</a>
-			</li>
-			<li>
-				<a href="">MPV</a>
-			</li>	
-		</ul>
-	</div>
-	<!-- 搜索框输入结束 -->
-	<!-- 条件筛选开始 -->
-	<div class="filter">
-		<nav class="filter_nav">
-			<a href="">品牌<i class="icon-angle-down"></i></a>
-			<a href="">价格<i class="icon-angle-down"></i></a>
-			<a href="">更多<i class="icon-angle-down"></i></a>
-			<a href="" class="current">排序<i class="icon-angle-down"></i></a>
-		</nav>
-		<div class="filter_line"></div>
-		<div class="filter_list_con">
-			<div class="filter_details">
-				<ul class="filter_sort_list">
-					<li class="current"><a href="">默认排序 <i class="icon-checkmark"></i></a></li>
-					<li><a href="">最新上架<i class="icon-checkmark"></i></a></li>
-					<li><a href="">价格最高<i class="icon-checkmark"></i></a></li>
-					<li><a href="">价格最低<i class="icon-checkmark"></i></a></li>
-					<li><a href="">里程最少<i class="icon-checkmark"></i></a></li>
-					<li><a href="">车龄最短<i class="icon-checkmark"></i></a></li>
+	<div class="filter_details filter_more">
+		<dl class="filter_details_kind">
+			<dt class="filter_details_tit">车型</dt>
+			<dd>
+				<ul class="filter_details_list">
+					<li><a href="">两厢轿车</a></li>
+					<li><a href="">三厢轿车</a></li>
+					<li><a href="">跑车</a></li>
+					<li><a href="">SUV</a></li>
+					<li><a href="">MPV</a></li>
+					<li><a href="">买包车</a></li>
+					<li><a href="">皮卡</a></li>
 				</ul>
-			</div>
-			<div class="filter_details filter_price_con">
-				<dl class="filter_details_kind">
-					<dt class="filter_details_tit">自定义价格</dt>
-					<dd class="filter_set_price">
-						<div class="input_price_box input_1">
-							<input type="text" maxlength="4">万
-						</div>
-						<div class="_set_price_line">-</div>
-						<div class="input_price_box input_2">
-							<input type="text" maxlength="4">万
-						</div>
-						<button>确定</button>
-					</dd>
-				</dl>
-				<ul class="filter_price_list filter_details_list">
-					<li><a href="">不限</a></li>
-					<li><a href="">3万以下</a></li>
+			</dd>
+		</dl>
+		<dl class="filter_details_kind">
+			<dt class="filter_details_tit">车龄</dt>
+			<dd>
+				<ul class="filter_details_list">
+					<li><a href="">3年以内</a></li>
 					<li><a href="">3-5万</a></li>
 					<li><a href="">5-7万</a></li>
-					<li><a href="">7-9万</a></li>
 					<li><a href="">9-12万</a></li>
-					<li><a href="">12万-16万</a></li>
-					<li><a href="">16万-20万</a></li>
+					<li><a href="">12-16万</a></li>
+					<li><a href="">16-20万</a></li>
 					<li><a href="">20万以上</a></li>
 				</ul>
-			</div>
-			<div class="filter_details filter_more">
-				<dl class="filter_details_kind">
-					<dt class="filter_details_tit">车型</dt>
-					<dd>
-						<ul class="filter_details_list">
-							<li><a href="">两厢轿车</a></li>
-							<li><a href="">三厢轿车</a></li>
-							<li><a href="">跑车</a></li>
-							<li><a href="">SUV</a></li>
-							<li><a href="">MPV</a></li>
-							<li><a href="">买包车</a></li>
-							<li><a href="">皮卡</a></li>
-						</ul>
-					</dd>
-				</dl>
-				<dl class="filter_details_kind">
-					<dt class="filter_details_tit">车龄</dt>
-					<dd>
-						<ul class="filter_details_list">
-							<li><a href="">3年以内</a></li>
-							<li><a href="">3-5万</a></li>
-							<li><a href="">5-7万</a></li>
-							<li><a href="">9-12万</a></li>
-							<li><a href="">12-16万</a></li>
-							<li><a href="">16-20万</a></li>
-							<li><a href="">20万以上</a></li>
-						</ul>
-					</dd>
-				</dl>
-				<dl class="filter_details_kind">
-					<dt class="filter_details_tit">变速箱</dt>
-					<dd>
-						<ul class="filter_details_list">
-							<li><a href="">自动</a></li>
-							<li><a href="">手动</a></li>
-						</ul>
-					</dd>
-				</dl>
-				<dl class="filter_details_kind">
-					<dt class="filter_details_tit">公里数</dt>
-					<dd>
-						<ul class="filter_details_list">
-							<li><a href="">1万以内</a></li>
-							<li><a href="">3万以内</a></li>
-							<li><a href="">3-5万</a></li>
-							<li><a href="">5-8万</a></li>
-							<li><a href="">8-10万</a></li>
-							<li><a href="">10万以上</a></li>
-						</ul>
-					</dd>
-				</dl>
-				<dl class="filter_details_kind">
-					<dt class="filter_details_tit">排放标准</dt>
-					<dd>
-						<ul class="filter_details_list">
-							<li><a href="">国二及以上</a></li>
-							<li><a href="">国三及以上</a></li>
-							<li><a href="">国四及以上</a></li>
-							<li><a href="">国五</a></li>
-						</ul>
-					</dd>
-				</dl>
-				<ul class="filter_more_btn">
-					<li class="filter_reset">重&nbsp;置</li>
-					<li class="filter_found">查&nbsp;找</li>
-				</ul>	
-			</div>
-				
-		</div>
-	</div>
-	
-	<!-- 条件筛选结束 -->
+			</dd>
+		</dl>
+		<dl class="filter_details_kind">
+			<dt class="filter_details_tit">变速箱</dt>
+			<dd>
+				<ul class="filter_details_list">
+					<li><a href="">自动</a></li>
+					<li><a href="">手动</a></li>
+				</ul>
+			</dd>
+		</dl>
+		<dl class="filter_details_kind">
+			<dt class="filter_details_tit">公里数</dt>
+			<dd>
+				<ul class="filter_details_list">
+					<li><a href="">1万以内</a></li>
+					<li><a href="">3万以内</a></li>
+					<li><a href="">3-5万</a></li>
+					<li><a href="">5-8万</a></li>
+					<li><a href="">8-10万</a></li>
+					<li><a href="">10万以上</a></li>
+				</ul>
+			</dd>
+		</dl>
+		<dl class="filter_details_kind">
+			<dt class="filter_details_tit">排放标准</dt>
+			<dd>
+				<ul class="filter_details_list">
+					<li><a href="">国二及以上</a></li>
+					<li><a href="">国三及以上</a></li>
+					<li><a href="">国四及以上</a></li>
+					<li><a href="">国五</a></li>
+				</ul>
+			</dd>
+		</dl>
+		<ul class="filter_more_btn">
+			<li class="filter_reset">重&nbsp;置</li>
+			<li class="filter_found">查&nbsp;找</li>
+		</ul>	
+	</div>	
 </body>
 </html>
