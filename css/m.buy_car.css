@@ -8,7 +8,7 @@ nav.filter_nav>a { display: block; width: 25%; text-align: center;
 nav.filter_nav>a.current { color: #d10310; border-bottom-color: #d10310;  }
 div.filter a { font-size: 14px; }		
 [data-dpr="2"] div.filter a { font-size: 28px; }
-[data-dpr="3"] div.filter a { font-size: 42px; }
+[data-dpr="3"] div.filter a { font-size: 46px; }
 
 nav.filter_nav>a>i { margin-left: .0781rem; }	
 div.filter_line{ border-bottom: 1px solid #e6e6e6; }
