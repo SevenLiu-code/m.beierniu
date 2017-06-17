@@ -1,5 +1,5 @@
 /*条件筛选*/
-div.filter { margin-top: .3125rem; }
+div.filter { margin-top: 0.2344rem; }
 nav.filter_nav { display: flex; display: -webkit-flex; 
 	 background-color: #fff; }
 nav.filter_nav>a { display: block; width: 25%; text-align: center; 
@@ -16,7 +16,7 @@ div.filter_details { font-size: 14px; }
 [data-dpr="2"] div.filter_details { font-size: 28px; }
 [data-dpr="3"] div.filter_details { font-size: 42px; }
 /*排序筛选*/
-ul.filter_sort_list { background-color: #fff; }
+ul.filter_sort_list { display: none; background-color: #fff; }
 ul.filter_sort_list li { padding: 0 .7812rem; border-bottom: 1px solid #e6e6e6; }
 ul.filter_sort_list li>a { display: block; color: #252825; line-height: 1.375rem; 
 		 }
@@ -76,7 +76,18 @@ dd.brand_details_dd :last-child>a { border-bottom: none;  }
 [data-dpr="3"] li.brand_details_item>a { font-size: 46px; }
 /*字母定位*/
 aside.aside_letter { position: absolute; right: 0.4rem; top: 50%; } 
-aside ul.letter_list {  }
-aside ul.letter_list>li {  line-height: 0.625rem; color: #d10310; }
+aside ul.letter_list>li { text-align: center; line-height: 0.625rem; color: #d10310; }
 aside.aside_letter_fixed { position: fixed; }
-
+/*当前筛选条件*/
+div.current_filter {  padding: 0.3125rem 0.4688rem 0.1562rem 0.4688rem; overflow: hidden; }
+ul.current_filter_list { float: left; width: 80%; overflow: hidden; }
+li.current_filter_item { float: left; border: 1px solid #e0e0e0;
+				margin: 0 0.1562rem 0.1562rem 0;	background-color: #fff; }
+li.current_filter_item>a { display: block; padding: 0 0.3125rem; font-size: 12px;
+	line-height: 0.8125rem; text-align: center; color: #666; }
+[data-dpr="2"] li.current_filter_item>a { font-size: 24px; }
+[data-dpr="3"] li.current_filter_item>a { font-size: 36px; }
+li.current_filter_item>a>i { margin-left: 0.2344rem; color: #aaa;
+	 font-size: 0.3125rem; }
+ div.current_filter_reset { float: right; margin-right: 0.3125rem;
+ 	line-height: 0.8125rem; color: #888; }
