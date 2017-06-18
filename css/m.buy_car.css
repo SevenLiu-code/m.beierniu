@@ -50,13 +50,13 @@ ul.filter_details_list>li>a { display: block; width: 2.8rem;
 [data-dpr="3"] ul.filter_details_list>li>a { height: 120px; line-height: 120px; }
 div.filter_more { margin-bottom: 1.6rem; }
 /*更多筛选按钮*/
-header.filter_header { display:flex; display: -webkit-flex; align-items: center;
-	padding: 0 0.4688rem; border-bottom: 1px solid #dbdbdb; line-height: 1.3rem; 
-	background-color: #fff; }
-header.filter_header>a { display: block;width: 10%; font-size: .8rem;
+header.filter_header, div.car_parameter_head { display:flex; display: -webkit-flex; 
+	padding: 0 0.4688rem; border-bottom: 1px solid #dbdbdb; line-height: 1.2rem; 
+	background-color: #fff; align-items: center; }
+header.filter_header>a, div.car_parameter_head>a { display: block;width: 10%; font-size: .8rem;
 	 color: #d10310; text-align: center; }
-header.filter_header>p { width: 83%; text-align: center;
-		color: #333; font-size: 0.5rem; }
+header.filter_header>p, div.car_parameter_head>p { width: 83%; text-align: center;
+		color: #3c3c3c; font-size: 0.46rem; }
 ul.filter_more_btn { position: fixed; height: 1.3281rem; bottom: 0;left: 0; right: 0;
 				display: flex; display: -webkit-flex; text-align: center;
 			box-shadow: 0 0 10px rgba(0,0,0,.3); font-size: 0.4375rem; line-height: 1.3281rem; }

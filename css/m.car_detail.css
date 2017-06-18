@@ -1,5 +1,89 @@
-div.car_detail_head { position: absolute; padding: 0 0.4688rem; }
-div.car_detail_head>a { display: block; width: 1rem; height: 1rem; 
+section.car_detail { position: relative; }
+/*车辆详情头部*/
+header.car_detail_head { position: absolute; z-index: 3; top: 0.1562rem;
+		 padding: 0 0.4688rem; }
+header.car_detail_head>a { display: block; width: 1rem; height: 1rem; 
 	background-color: rgba(0,0,0,.4); color: #fff; text-align: center;
 	font-size: .9rem; border-radius: 50%;  }
-div.car_d_img_con { position: relative;  }
+div.car_d_img_con { position: relative; background-color: #fff;  }
+li._img_slide_item>img { width: 100%; }
+section.car_detail_info { margin-bottom: 1rem; }
+/*图片数量*/
+div._img_counts_box { left: 0.4688rem; font-size: 0.375rem; 
+	display: flex; display: -webkit-flex; align-items: center; }
+div._img_counts_box, div.car_id { position: absolute; bottom: 0.4688rem;
+ 	padding: 0.04rem 0.18rem; font-size: 0.375rem; color: #fff;
+ 	background-color: rgba(0,0,0,.4); }	
+span._img_count_bg { display: inline-block; width: 0.3438rem; height: 0.3438rem;
+	background: url(../images/base/_img_count.png) no-repeat; 
+	background-size: 100%; margin-right: 0.1562rem; }
+div.car_id {  right: 0.4688rem; }	
+/*标题*/
+div.car_detail_tit { padding: 0.1562rem 0.4688rem 0.22rem 0.4688rem; 
+	margin-bottom: 0.1562rem; background-color: #fff; }
+div.car_detail_tit>h1 { display: -webkit-box; -webkit-line-clamp: 2; overflow: hidden;
+    -webkit-box-orient: vertical; line-height: .75rem; font-size: 20px;
+    text-overflow: ellipsis; white-space: normal; color: #495056;  }
+ [data-dpr="2"] div.car_detail_tit>h1 { font-size: 34px; } 
+ [data-dpr="3"] div.car_detail_tit>h1 { font-size: 60px; }
+div.car_show_price>i.l_price { margin-left: 1.5rem; padding: 0 0.0625rem;
+ 	background-color: #26b829; color: #fff; line-height: 0.5rem; }
+/*基础信息模块*/
+div.car_d_info_kind { padding: 0.4688rem; margin-top: 0.2344rem;
+	 background-color: #fff; } 
+div.caption_line { margin-top: 0.3125rem; border-bottom: 1px solid #d1d1d1; }	 
+ul._info_kind_list { overflow: hidden; padding-top: 0.4rem;  } 
+div.car_d_info_kind ul>li._info_list_item { float: left; text-align: center; }
+ul._info_base_list>li { width: 33.333%; margin-bottom: 0.35rem; }
+ul._info_base_list>li>._info_tit { margin-bottom: 0.09rem; font-size: 12px; color: #585858  }
+[data-dpr="2"] ul._info_base_list>li>._info_tit { font-size: 24px; }
+[data-dpr="3"] ul._info_base_list>li>._info_tit { font-size: 39px; }
+li._info_base_item>._info_text { font-size: 14px; color: #1B1B1B; }
+[data-dpr="2"] ul._info_base_list>li>._info_text { font-size: 28px; }
+[data-dpr="3"] ul._info_base_list>li>._info_text { font-size: 48px; }
+div._info_base_more { margin-top: 0.2rem; }
+div._info_base_more>a { display: block; width: 3.8rem; margin: 0 auto; 
+	border: 1px solid #999; color: #585858; line-height: .9rem; text-align: center; 
+	border-radius: 0.0781rem; font-size: 0.375rem; }
+/*购车流程*/
+ul._info_buyCar_list>li { width: 25%; }
+div._info_buyCar_bg { margin: 0 auto; width: 1.0312rem; height: 1.0312rem;
+		background-size: 100%; }
+div._info_buyCar_bg._info_tell { background-image: url(../images/base/bddh.png); }
+div._info_buyCar_bg._info_sell { background-image: url(../images/base/xckc.png); }
+div._info_buyCar_bg._info_get { background-image: url(../images/base/ksqc.png); }
+div._info_buyCar_bg._info_service { background-image: url(../images/base/axzb.png); }
+p._info_buyCar_text { margin-top: 0.2344rem; font-size: 14px; color: #1B1B1B; }
+[data-dpr="2"] p._info_buyCar_text { font-size: 24px; }
+[data-dpr="3"] p._info_buyCar_text { font-size: 39px; }
+/*相似推荐*/
+div.car_d_info_kind>ul.car_show_main>li{ padding: 0; }
+/*按钮*/
+section.car_detail_btn { position: fixed; z-index: 3; bottom: 0; left: 0; right: 0;
+		box-shadow: 0 0 10px rgba(0,0,0,.3); }
+section.car_detail_btn>div {float: left; width: 50%; line-height: 1.3rem; 
+	text-align: center; color: #fff; font-size: 16px; }
+[data-dpr="2"] section.car_detail_btn>div { font-size: 32px; }
+[data-dpr="3"] section.car_detail_btn>div { font-size: 54px; }		
+section.car_detail_btn>div._l_price_btn { background-color: #2ab40f; }	
+section.car_detail_btn>div._sell_car_btn { background-color: #e2ae30; }
+/*配置参数*/
+div.car_parameter_kind { padding: 0.34rem 0; margin-bottom: 0.3125rem;
+	 background-color: #fff; }
+div.car_parameter_kind .caption { margin: 0 0.4688rem 0.3125rem 0.4688rem;  }
+table.car_parameter_list { width: 100%; font-size: 14px; line-height: 40px; }
+[data-dpr="2"] table.car_parameter_list { font-size: 28px; line-height: 80px; }
+[data-dpr="3"] table.car_parameter_list { font-size: 42px; line-height: 120px; }
+tr.car_para_cotent {  border-top: 1px solid #f3f2f2; }
+td.car_para_tit { width: 50%; padding-right: 0.18rem; 
+	text-align: right; color: #666; }
+td.car_para_text { width: 50%; padding-left: 0.18rem; 
+	text-align: left; color: #222; }
+
+
+
+
+
+
+
+

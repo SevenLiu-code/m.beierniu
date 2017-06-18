@@ -41,10 +41,10 @@ ul.home_btn>li>a.buy_car_btn { float: left; background-color: #ff9a16; }
 ul.home_btn>li>a.sell_car_btn { float: right; background-color: #ff1414; }
 /*资讯*/
 section.sec_margin { margin-top: 0.4688rem; padding-top: 0.4688rem; padding-bottom: 0.2344rem; }
-.caption { font-size: 0.4375rem; color: #495056; padding-left: 0.1562rem;
-			border-left: 0.0625rem solid #f4320b; line-height: 0.4375rem; }
-/*[data-dpr="2"] .caption { font-size: 28px; }
-[data-dpr="3"] .caption { font-size: 42px; }*/
+.caption { font-size: 14px; color: #495056; padding-left: 0.1562rem;
+			border-left: 0.0625rem solid #f4320b; line-height: 14px; }
+[data-dpr="2"] .caption { font-size: 28px; line-height: 28px; }
+[data-dpr="3"] .caption { font-size: 48px; line-height: 48px; }
 .home_info ul.info_tit_box { padding-top: 0.1562rem; }
 .home_info li.info_tit { display: -webkit-flex; display: flex; 
 	 padding-left: 0.1562rem; align-items: baseline; justify-content: space-between; }
