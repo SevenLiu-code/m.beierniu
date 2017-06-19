@@ -4,7 +4,9 @@ $(function(){
 		var $body = $(this).parents('body');
 		$body.find('header.head_index, div.main_container, footer').hide(0);
 		$body.find('div.search_input_con').show(0);
-		$body.find('div.search_input_con form.h_search_form input').click();
+		$body.find('div.search_input_con form.h_search_form input').click(function(){
+			$(this).focus();
+		});
 	});
 	$('div.search_input_con a.search_input_close').tap(function(){
 		var $body = $(this).parents('body');
