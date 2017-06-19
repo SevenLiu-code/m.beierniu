@@ -2,7 +2,7 @@ section.container { padding: 0 0.4688rem; background-color: #fff; }
 /*首页轮播图*/
 div.home_slide { width: 10rem; position: relative;}
 ul.h_s_img_box { height: 3.125rem; }
-ul.h_s_img_box li.item { width: 100%; height: 100%; float: left;   }
+ul.h_s_img_box li.item { width: 100%; height: 100%; float: left; }
 ul.h_s_img_box li.item img { width: 100%; height: 100%; }
 ol.h_s_dot { position: absolute; left: 35%; bottom: 2%;
 			width: 30%; text-align: center;  }
