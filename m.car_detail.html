@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>m.car_detail</title>
+	<meta charset="UTF-8">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<link rel="stylesheet" type="text/css" href="./css/m.reset.css">
+	<link rel="stylesheet" type="text/css" href="./css/m.style.css">
+	<link rel="stylesheet" type="text/css" href="./css/m.common.css">
+	<link rel="stylesheet" type="text/css" href="./css/m.home.css">
+	<link rel="stylesheet" type="text/css" href="./css/m.buy_car.css">
+	<link rel="stylesheet" type="text/css" href="./css/m.car_detail.css">
+	<script type="text/javascript">
+		!function(N,M){function L(){var a=I.getBoundingClientRect().width;a/F>540&&(a=540*F);var d=a/10;I.style.fontSize=d+"px",D.rem=N.rem=d}var K,J=N.document,I=J.documentElement,H=J.querySelector('meta[name="viewport"]'),G=J.querySelector('meta[name="flexible"]'),F=0,E=0,D=M.flexible||(M.flexible={});if(H){console.warn("将根据已有的meta标签来设置缩放比例");var C=H.getAttribute("content").match(/initial\-scale=([\d\.]+)/);C&&(E=parseFloat(C[1]),F=parseInt(1/E))}else{if(G){var B=G.getAttribute("content");if(B){var A=B.match(/initial\-dpr=([\d\.]+)/),z=B.match(/maximum\-dpr=([\d\.]+)/);A&&(F=parseFloat(A[1]),E=parseFloat((1/F).toFixed(2))),z&&(F=parseFloat(z[1]),E=parseFloat((1/F).toFixed(2)))}}}if(!F&&!E){var y=N.navigator.userAgent,x=(!!y.match(/android/gi),!!y.match(/iphone/gi)),w=x&&!!y.match(/OS 9_3/),v=N.devicePixelRatio;F=x&&!w?v>=3&&(!F||F>=3)?3:v>=2&&(!F||F>=2)?2:1:1,E=1/F}if(I.setAttribute("data-dpr",F),!H){if(H=J.createElement("meta"),H.setAttribute("name","viewport"),H.setAttribute("content","initial-scale="+E+", maximum-scale="+E+", minimum-scale="+E+", user-scalable=no"),I.firstElementChild){I.firstElementChild.appendChild(H)}else{var u=J.createElement("div");u.appendChild(H),J.write(u.innerHTML)}}N.addEventListener("resize",function(){clearTimeout(K),K=setTimeout(L,300)},!1),N.addEventListener("pageshow",function(b){b.persisted&&(clearTimeout(K),K=setTimeout(L,300))},!1),"complete"===J.readyState?J.body.style.fontSize=12*F+"px":J.addEventListener("DOMContentLoaded",function(){J.body.style.fontSize=12*F+"px"},!1),L(),D.dpr=N.dpr=F,D.refreshRem=L,D.rem2px=function(d){var c=parseFloat(d)*this.rem;return"string"==typeof d&&d.match(/rem$/)&&(c+="px"),c},D.px2rem=function(d){var c=parseFloat(d)/this.rem;return"string"==typeof d&&d.match(/px$/)&&(c+="rem"),c}}(window,window.lib||(window.lib={}));
+	</script>
+	<script type="text/javascript" src="./js/zepto.min.js"></script>
+	<script type="text/javascript" src="./js/m.common.js"></script>
+</head>
+<body>
+	<!-- 返回搜索结果 -->
+	<header class="car_detail_head" style="display: none">
+		<a href="" class="icon-angle-left"></a>
+	</header>
+	<section class="car_detail_info" style="display: none">
+		<!-- 图片轮播 -->
+		<div class="car_d_img_con">
+			<ul class="_img_slide">
+				<li class="_img_slide_item">
+					<img src="./images/test/kdlk.jpg" alt="">
+				</li>
+			</ul>
+			<div class="_img_counts_box">
+				<span class="_img_count_bg"></span>
+				<span class="_img_counts_on">1</span>&nbsp;/&nbsp;<i class="_img_counts">30</i>
+			</div>
+			<div class="car_id">
+				车源号：<span>888888888</span>	
+			</div>
+		</div>
+		<!-- 车辆信息标题部分 -->
+		<div class="car_detail_tit">
+			<h1>别克君威 2012款 2.4L SIDI精英版</h1>
+			<div class="car_show_price">
+				<strong>7.60万</strong>新车指导价：<span>11.71万</span>
+				<i class="l_price">可砍价</i>
+			</div>
+		</div>
+		<!-- 基础信息模块 -->
+		<div class="car_d_info_kind">
+			<div class="caption">车辆信息</div>
+			<div class="caption_line"></div>
+			<ul class="_info_kind_list _info_base_list">
+				<li class="_info_list_item">
+					<div class="_info_tit">表显里程</div>
+					<p class="_info_text">2万公里</p>
+				</li>
+				<li class="_info_list_item">
+					<div class="_info_tit">排放标准</div>
+					<p class="_info_text">国五</p>
+				</li>
+				<li class="_info_list_item">
+					<div class="_info_tit">上牌时间</div>
+					<p class="_info_text">2015-04</p>
+				</li>
+				<li class="_info_list_item">
+					<div class="_info_tit">排量</div>
+					<p class="_info_text">2.0L</p>
+				</li>
+				<li class="_info_list_item">
+					<div class="_info_tit">所在地</div>
+					<p class="_info_text">无锡</p>
+				</li>
+				<li class="_info_list_item">
+					<div class="_info_tit">上架时间</div>
+					<p class="_info_text">2017-06</p>
+				</li>
+			</ul>
+			<div class="_info_base_more">
+				<a href="javascript:;">查看车辆详细信息</a>
+			</div>
+		</div>
+		<div class="car_d_info_kind">
+			<div class="caption">购车流程</div>
+			<div class="caption_line"></div>
+			<ul class="_info_kind_list _info_buyCar_list">
+				<li class="_info_list_item">
+					<div class="_info_buyCar_bg _info_tell"></div>
+					<p class="_info_buyCar_text">拨打电话</p>
+				</li>
+				<li class="_info_list_item">
+					<div class="_info_buyCar_bg _info_sell"></div>
+					<p class="_info_buyCar_text">现场看车</p>
+				</li>
+				<li class="_info_list_item">
+					<div class="_info_buyCar_bg _info_get"></div>
+					<p class="_info_buyCar_text">快速取车</p>
+				</li>
+				<li class="_info_list_item">
+					<div class="_info_buyCar_bg _info_service"></div>
+					<p class="_info_buyCar_text">安享质保</p>
+				</li>
+			</ul>
+		</div>
+		<div class="car_d_info_kind">
+			<div class="caption">相似推荐</div>
+			<div class="caption_line"></div>
+			<ul class="car_show_main">
+					<li class="car_show_item">
+						<a href="" class="car_show_link">
+							<div class="car_show_img">
+								<img src="./images/test/qihu.jpg" alt="">
+							</div>
+							<h3>奇瑞瑞虎5 2016款 1.5T 手动家悦信赖版</h3>
+							<p class="car_show_mil">2016年/2万公里 <span class="l_price">可砍价</span></p>
+							<div class="car_show_price">
+								<strong>7.60万</strong><span>11.71万</span>
+							</div>
+						</a>
+					</li>
+					<li class="car_show_item">
+						<a href="" class="car_show_link">
+							<div class="car_show_img">
+								<img src="./images/test/qihu.jpg" alt="">
+							</div>
+							<h3>奇瑞瑞虎5 2016款 1.5T 手动家悦信赖版</h3>
+							<p class="car_show_mil">2016年/2万公里</p>
+							<div class="car_show_price">
+								<strong>7.60万</strong><span>11.71万</span>
+							</div>
+						</a>
+					</li>
+					<li class="car_show_item">
+						<a href="" class="car_show_link">
+							<div class="car_show_img">
+								<img src="./images/test/qihu.jpg" alt="">
+							</div>
+							<h3>奇瑞瑞虎5 2016款 1.5T 手动家悦信赖版</h3>
+							<p class="car_show_mil">2016年/2万公里</p>
+							<div class="car_show_price">
+								<strong>7.60万</strong><span>11.71万</span>
+							</div>
+						</a>
+					</li>
+					<li class="car_show_item">
+						<a href="" class="car_show_link">
+							<div class="car_show_img">
+								<img src="./images/test/qihu.jpg" alt="">
+							</div>
+							<h3>奇瑞瑞虎5 2016款 1.5T 手动家悦信赖版</h3>
+							<p class="car_show_mil">2016年/2万公里</p>
+							<div class="car_show_price">
+								<strong>7.60万</strong><span>11.71万</span>
+							</div>
+						</a>
+					</li>
+			</ul>
+		</div>	
+	</section>
+	<section class="car_detail_btn" style="display: none">
+		<div class="_l_price_btn">我要砍价</div>
+		<div class="_sell_car_btn">预约看车</div>
+	</section>
+	<div class="car_parameter">
+		<div class="car_parameter_head">
+			<a href="javascript:;" class="icon-angle-left"></a>
+			<p>配置参数</p>
+		</div>
+		<div class="car_parameter_kind">
+			<div class="caption">基本参数</div>
+			<table class="car_parameter_list">
+				<tbody>
+					<tr class="car_para_cotent">
+						<td class="car_para_tit">厂商</td>
+						<td class="car_para_text">北京现代</td>
+					</tr>
+					<tr class="car_para_cotent">
+						<td class="car_para_tit">级别</td>
+						<td class="car_para_text">小型车</td>
+					</tr>
+					<tr class="car_para_cotent">
+						<td class="car_para_tit">发动机</td>
+						<td class="car_para_text"></td>
+					</tr>
+					<tr class="car_para_cotent">
+						<td class="car_para_tit">变速箱</td>
+						<td class="car_para_text"></td>
+					</tr>
+					<tr class="car_para_cotent">
+						<td class="car_para_tit">车身结构</td>
+						<td class="car_para_text"></td>
+					</tr>
+					<tr class="car_para_cotent">
+						<td class="car_para_tit">长*宽*高</td>
+						<td class="car_para_text"></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div class="car_parameter_kind">
+			<div class="caption">发动机参数</div>
+			<table class="car_parameter_list">
+				<tbody>
+					<tr class="car_para_cotent">
+						<td class="car_para_tit">排量（L）</td>
+						<td class="car_para_text">1.4</td>
+					</tr>
+					<tr class="car_para_cotent">
+						<td class="car_para_tit">进气形式</td>
+						<td class="car_para_text">自然吸气</td>
+					</tr>
+					<tr class="car_para_cotent">
+						<td class="car_para_tit">气缸</td>
+						<td class="car_para_text">L4</td>
+					</tr>
+					<tr class="car_para_cotent">
+						<td class="car_para_tit">最大马力（Ps）</td>
+						<td class="car_para_text">107</td>
+					</tr>
+					<tr class="car_para_cotent">
+						<td class="car_para_tit">最大扭矩</td>
+						<td class="car_para_text"></td>
+					</tr>
+					<tr class="car_para_cotent">
+						<td class="car_para_tit">燃料类型</td>
+						<td class="car_para_text">汽油</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div> 
+</body>
+</html>
