@@ -1,10 +1,10 @@
 html { background-color: #f5f5f5; }
-body { background-color: #f5f5f5; min-width: 320px; max-width: 768px;
+body { background-color: #f5f5f5; min-width: 320px; max-width: 1300px;
 	margin: 0 auto; }
 /*mobile头部公用*/
 header.head_index { overflow: hidden; display: flex; display: -webkit-flex;
-		 align-items: center; padding: 0.281rem 0.468rem; 
-		 background-color: #ececec; background-color: #fff; } 
+	align-items: center; padding: 0.281rem 0.468rem; justify-content: space-between;
+	background-color: #ececec; background-color: #fff; } 
 header.head_index .h_logo { width: 1.3281rem; height: 0.6875rem;
 				background: url(../images/base/h_logo.png) no-repeat center center;
 				margin-right: 0.3rem; background-size: 100%; }
@@ -15,9 +15,9 @@ header.head_index a.h_city>span { display: inline-block; vertical-align: -0.07re
 [data-dpr="2"] header a.h_city { font-size: 24px; }
 [data-dpr="3"] header a.h_city { font-size: 36px; }								
 header.head_index .h_search_box { float: right; width: 5.875rem; height: 0.9rem;
-					padding-left: 0.625rem;line-height: 0.9rem; color: #b4b4b4;
-					border: 1px solid #b4b4b4; background-color: #fff; 
-					border-radius: 0.0938rem; font-size: 12px; }
+	padding-left: 0.625rem;line-height: 0.9rem; color: #b4b4b4;
+	border: 1px solid #b4b4b4; background-color: #fff; 
+	border-radius: 0.0938rem; font-size: 12px; margin-right: 0.1562rem; }
 [data-dpr="2"] header.head_index .h_search_box { font-size: 24px; }	
 [data-dpr="3"] header.head_index .h_search_box { font-size: 36px; }					
 header.head_index .h_search_box>span { width: 0.4688rem; height: 0.4688rem;

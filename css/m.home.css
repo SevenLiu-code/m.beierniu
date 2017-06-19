@@ -1,14 +1,15 @@
 section.container { padding: 0 0.4688rem; background-color: #fff; }
 /*首页轮播图*/
-div.home_slide { width: 10rem; position: relative;}
+div.home_slide { width: 10rem; position: relative; overflow: hidden; }
 ul.h_s_img_box { height: 3.125rem; }
 ul.h_s_img_box li.item { width: 100%; height: 100%; float: left; }
 ul.h_s_img_box li.item img { width: 100%; height: 100%; }
-ol.h_s_dot { position: absolute; left: 35%; bottom: 2%;
-			width: 30%; text-align: center;  }
-ol.h_s_dot li.a_dot { display: inline-block;  width: .18rem; height: .18rem;
-    margin: 0.05rem; border-radius: 50%; background-color: #c0c4ca; } 
-ol.h_s_dot li.a_dot.current { background-color: #fa0000; }
+div.h_s_dot { position: absolute; left: 35%; bottom: 2%;
+			width: 30%; text-align: center; }
+div.h_s_dot span.swiper-pagination-bullet { display: inline-block;  width: .18rem; height: .18rem;
+    margin: 0.08rem; border-radius: 50%; background-color: #c0c4ca; } 
+div.h_s_dot span.swiper-pagination-bullet.swiper-pagination-bullet-active{ 
+	background-color: #fa0000; }
 /*首页菜单*/
 div.home_menu { padding-top: 0.5625rem; }
 ul.h_menu_main { display: -webkit-flex; /* Safari */ display: flex; }
@@ -70,6 +71,12 @@ li.h_nav_item.ask>a>i { background-position: 0 -4.8125rem; }
 /*首页车辆展示种类标题	*/
 section.car_show { padding: 0.4688rem 0 0.7812rem 0; }	
 ul.car_show_tit { display: flex; display: -webkit-flex; }
+ul.car_show_tit.swiper-pagination { position: relative; bottom: 0; }
+ul.car_show_tit.swiper-pagination>li.swiper-pagination-bullet { width: 33.33%;
+		height: auto; border-radius: 0; background-color: transparent; opacity: 1; }
+ul.car_show_tit.swiper-pagination>li.swiper-pagination-bullet-active>a {
+	padding: 0 0.4rem 0.1562rem 0.4rem; border-bottom: 3px solid #d10310;
+}		
 .btm_box { padding-top: 0.3125rem; }
 .btm_box>a { display: block; width: 5.4688rem; height: 1.1rem;
 			margin: 0 auto; border-radius: 0.1562rem; text-align: center;

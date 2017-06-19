@@ -7,6 +7,7 @@
 	<meta name="keywords" content="">
 	<link rel="stylesheet" type="text/css" href="./css/m.reset.css">
 	<link rel="stylesheet" type="text/css" href="./css/m.style.css">
+	<link rel="stylesheet" type="text/css" href="./css/swiper.min.css">
 	<link rel="stylesheet" type="text/css" href="./css/m.common.css">
 	<link rel="stylesheet" type="text/css" href="./css/m.font_size.css">
 	<link rel="stylesheet" type="text/css" href="./css/m.home.css">
@@ -15,9 +16,11 @@
 	</script>
 	<script type="text/javascript" src="./js/zepto.min.js"></script>
 	<script type="text/javascript" src="./js/fastclick.js"></script>
+	<script type="text/javascript" src="./js/swiper.jquery.min.js"></script>
 	<script type="text/javascript">
 		$(function() { FastClick.attach(document.body); });
 	</script>
+	<script type="text/javascript" src="./js/m.runing.js"></script>
 	<script type="text/javascript" src="./js/m.define.js"></script>
 	<script type="text/javascript" src="./js/m.touch.js"></script>
 	<script type="text/javascript" src="./js/m.common.js"></script>
@@ -86,18 +89,20 @@
 	<div class="main_container">
 		<!-- 首页轮播图 -->
 		<section>
-			<div class="home_slide">
-				<ul class="h_s_img_box">
-					<li class="item">
+			<div class="home_slide swiper-container">
+				<ul class="h_s_img_box swiper-wrapper">
+					<li class="item swiper-slide">
 						<a href="">
 							<img src="./images/test/taobao_1.jpg" alt="">
 						</a>
 					</li>
+					<li class="item swiper-slide">
+						<a href="">
+							<img src="./images/test/taobao_2x_1.jpg" alt="">
+						</a>
+					</li>
 				</ul>
-				<ol class="h_s_dot">
-					<li class="a_dot current"></li>
-					<li class="a_dot"></li>
-				</ol>
+				<div class="h_s_dot swiper-pagination"></div>
 			</div>
 		</section>
 		<!-- 首页条件筛选 -->
@@ -234,26 +239,214 @@
 			</ul>
 		</section>
 		<!-- 首页车辆展示 -->
-		<section class="container car_show sec_margin">
-			<ul class="car_show_tit">
-				<li>
-					<a href="" class="current">最新上架</a>
-				</li>
-				<li>
-					<a href="">准新车</a>
-				</li>
-				<li>
-					<a href="">降价急售</a>
-				</li>
+		<section class="container car_show sec_margin swiper-car-show">
+			<ul class="car_show_tit swiper-pagination">
+
 			</ul>
-			<div class="car_show_main_box">
-				<ul class="car_show_main">
+			<div class="car_show_main_box swiper-wrapper">
+				<ul class="car_show_main swiper-slide">
+					<li class="car_show_item">
+						<a href="" class="car_show_link">
+							<div class="car_show_img">
+								<img src="./images/test/qihu.jpg" alt="">
+							</div>
+							<h3>奇瑞瑞虎5 2016款 1.5T 手动家悦信赖版111</h3>
+							<p class="car_show_mil">2016年/2万公里</p>
+							<div class="car_show_price">
+								<strong>7.60万</strong><span>11.71万</span>
+							</div>
+						</a>
+					</li>
 					<li class="car_show_item">
 						<a href="" class="car_show_link">
 							<div class="car_show_img">
 								<img src="./images/test/qihu.jpg" alt="">
 							</div>
 							<h3>奇瑞瑞虎5 2016款 1.5T 手动家悦信赖版</h3>
+							<p class="car_show_mil">2016年/2万公里 <span class="l_price">可砍价</span></p>
+							<div class="car_show_price">
+								<strong>7.60万</strong><span>11.71万</span>
+							</div>
+						</a>
+					</li>
+					<li class="car_show_item">
+						<a href="" class="car_show_link">
+							<div class="car_show_img">
+								<img src="./images/test/qihu.jpg" alt="">
+							</div>
+							<h3>奇瑞瑞虎5 2016款 1.5T 手动家悦信赖版</h3>
+							<p class="car_show_mil">2016年/2万公里</p>
+							<div class="car_show_price">
+								<strong>7.60万</strong><span>11.71万</span>
+							</div>
+						</a>
+					</li>
+					<li class="car_show_item">
+						<a href="" class="car_show_link">
+							<div class="car_show_img">
+								<img src="./images/test/qihu.jpg" alt="">
+							</div>
+							<h3>奇瑞瑞虎5 2016款 1.5T 手动家悦信赖版</h3>
+							<p class="car_show_mil">2016年/2万公里</p>
+							<div class="car_show_price">
+								<strong>7.60万</strong><span>11.71万</span>
+							</div>
+						</a>
+					</li>
+					<li class="car_show_item">
+						<a href="" class="car_show_link">
+							<div class="car_show_img">
+								<img src="./images/test/qihu.jpg" alt="">
+							</div>
+							<h3>奇瑞瑞虎5 2016款 1.5T 手动家悦信赖版</h3>
+							<p class="car_show_mil">2016年/2万公里</p>
+							<div class="car_show_price">
+								<strong>7.60万</strong><span>11.71万</span>
+							</div>
+						</a>
+					</li>
+					<li class="car_show_item">
+						<a href="" class="car_show_link">
+							<div class="car_show_img">
+								<img src="./images/test/qihu.jpg" alt="">
+							</div>
+							<h3>奇瑞瑞虎5 2016款 1.5T 手动家悦信赖版</h3>
+							<p class="car_show_mil">2016年/2万公里 <span class="l_price">可砍价</span></p>
+							<div class="car_show_price">
+								<strong>7.60万</strong><span>11.71万</span>
+							</div>
+						</a>
+					</li>
+					<li class="car_show_item">
+						<a href="" class="car_show_link">
+							<div class="car_show_img">
+								<img src="./images/test/qihu.jpg" alt="">
+							</div>
+							<h3>奇瑞瑞虎5 2016款 1.5T 手动家悦信赖版</h3>
+							<p class="car_show_mil">2016年/2万公里</p>
+							<div class="car_show_price">
+								<strong>7.60万</strong><span>11.71万</span>
+							</div>
+						</a>
+					</li>
+					<li class="car_show_item">
+						<a href="" class="car_show_link">
+							<div class="car_show_img">
+								<img src="./images/test/qihu.jpg" alt="">
+							</div>
+							<h3>奇瑞瑞虎5 2016款 1.5T 手动家悦信赖版</h3>
+							<p class="car_show_mil">2016年/2万公里</p>
+							<div class="car_show_price">
+								<strong>7.60万</strong><span>11.71万</span>
+							</div>
+						</a>
+					</li>
+				</ul>
+				<ul class="car_show_main swiper-slide">
+					<li class="car_show_item">
+						<a href="" class="car_show_link">
+							<div class="car_show_img">
+								<img src="./images/test/qihu.jpg" alt="">
+							</div>
+							<h3>奇瑞瑞虎5 2016款 1.5T 手动家悦信赖版222</h3>
+							<p class="car_show_mil">2016年/2万公里</p>
+							<div class="car_show_price">
+								<strong>7.60万</strong><span>11.71万</span>
+							</div>
+						</a>
+					</li>
+					<li class="car_show_item">
+						<a href="" class="car_show_link">
+							<div class="car_show_img">
+								<img src="./images/test/qihu.jpg" alt="">
+							</div>
+							<h3>奇瑞瑞虎5 2016款 1.5T 手动家悦信赖版</h3>
+							<p class="car_show_mil">2016年/2万公里 <span class="l_price">可砍价</span></p>
+							<div class="car_show_price">
+								<strong>7.60万</strong><span>11.71万</span>
+							</div>
+						</a>
+					</li>
+					<li class="car_show_item">
+						<a href="" class="car_show_link">
+							<div class="car_show_img">
+								<img src="./images/test/qihu.jpg" alt="">
+							</div>
+							<h3>奇瑞瑞虎5 2016款 1.5T 手动家悦信赖版</h3>
+							<p class="car_show_mil">2016年/2万公里</p>
+							<div class="car_show_price">
+								<strong>7.60万</strong><span>11.71万</span>
+							</div>
+						</a>
+					</li>
+					<li class="car_show_item">
+						<a href="" class="car_show_link">
+							<div class="car_show_img">
+								<img src="./images/test/qihu.jpg" alt="">
+							</div>
+							<h3>奇瑞瑞虎5 2016款 1.5T 手动家悦信赖版</h3>
+							<p class="car_show_mil">2016年/2万公里</p>
+							<div class="car_show_price">
+								<strong>7.60万</strong><span>11.71万</span>
+							</div>
+						</a>
+					</li>
+					<li class="car_show_item">
+						<a href="" class="car_show_link">
+							<div class="car_show_img">
+								<img src="./images/test/qihu.jpg" alt="">
+							</div>
+							<h3>奇瑞瑞虎5 2016款 1.5T 手动家悦信赖版</h3>
+							<p class="car_show_mil">2016年/2万公里</p>
+							<div class="car_show_price">
+								<strong>7.60万</strong><span>11.71万</span>
+							</div>
+						</a>
+					</li>
+					<li class="car_show_item">
+						<a href="" class="car_show_link">
+							<div class="car_show_img">
+								<img src="./images/test/qihu.jpg" alt="">
+							</div>
+							<h3>奇瑞瑞虎5 2016款 1.5T 手动家悦信赖版</h3>
+							<p class="car_show_mil">2016年/2万公里 <span class="l_price">可砍价</span></p>
+							<div class="car_show_price">
+								<strong>7.60万</strong><span>11.71万</span>
+							</div>
+						</a>
+					</li>
+					<li class="car_show_item">
+						<a href="" class="car_show_link">
+							<div class="car_show_img">
+								<img src="./images/test/qihu.jpg" alt="">
+							</div>
+							<h3>奇瑞瑞虎5 2016款 1.5T 手动家悦信赖版</h3>
+							<p class="car_show_mil">2016年/2万公里</p>
+							<div class="car_show_price">
+								<strong>7.60万</strong><span>11.71万</span>
+							</div>
+						</a>
+					</li>
+					<li class="car_show_item">
+						<a href="" class="car_show_link">
+							<div class="car_show_img">
+								<img src="./images/test/qihu.jpg" alt="">
+							</div>
+							<h3>奇瑞瑞虎5 2016款 1.5T 手动家悦信赖版</h3>
+							<p class="car_show_mil">2016年/2万公里</p>
+							<div class="car_show_price">
+								<strong>7.60万</strong><span>11.71万</span>
+							</div>
+						</a>
+					</li>
+				</ul>
+				<ul class="car_show_main swiper-slide">
+					<li class="car_show_item">
+						<a href="" class="car_show_link">
+							<div class="car_show_img">
+								<img src="./images/test/qihu.jpg" alt="">
+							</div>
+							<h3>奇瑞瑞虎5 2016款 1.5T 手动家悦信赖版333</h3>
 							<p class="car_show_mil">2016年/2万公里</p>
 							<div class="car_show_price">
 								<strong>7.60万</strong><span>11.71万</span>
@@ -347,7 +540,7 @@
 				</ul>
 			</div>
 			<div class="btm_box">
-				<a href="" class="box_s">查看更多车源</a>
+				<a href="./m.buy_car.html" class="box_s">查看更多车源</a>
 			</div>
 		</section>
 	</div>
