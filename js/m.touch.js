@@ -4,9 +4,11 @@ $(function(){
 		var $body = $(this).parents('body');
 		$body.find('header.head_index, div.main_container, footer').hide(0);
 		$body.find('div.search_input_con').show(0);
-		$body.find('div.search_input_con form.h_search_form input').focus();
+		$body.find('div.search_input_con form.h_search_form input').focus(function(){
+			$(this).val('');
+		});
 	});
-	$('div.search_input_con span.search_input_close').tap(function(){
+	$('div.search_input_con a.search_input_close').tap(function(){
 		var $body = $(this).parents('body');
 		$body.find('div.search_input_con').hide(0);
 		$body.find('header.head_index, div.main_container, footer').show(0);
