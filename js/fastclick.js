@@ -740,6 +740,8 @@
 		// Devices that don't support touch don't need FastClick
 		if (typeof window.ontouchstart === 'undefined') {
 			return true;
+		}else{ 
+			return false; 
 		}
 
 		// Chrome version - zero for other browsers
