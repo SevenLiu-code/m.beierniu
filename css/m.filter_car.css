@@ -1,9 +1,13 @@
 /*条件筛选*/
-div.filter { margin-top: 0.2344rem; }
+div.filter { border-top: 0.1562rem solid #f5f5f5; }
+div.filter.filter_position { position: absolute; top: 1.5rem; left: 0;
+	right: 0; z-index: 10;  }
 nav.filter_nav { display: flex; display: -webkit-flex; 
-	 background-color: #fff; }
+	 background-color: #fff;  }
+/*nav.filter_nav.filter_nav_posi { position: absolute; left: 0; right: 0; 
+		top: 1.5rem; z-index: 10; }	 */
 nav.filter_nav>a { display: block; width: 25%; text-align: center; 
-		color: #252825; line-height: 1.4rem; 
+		color: #252825; line-height: 1.2rem; 
 		border-bottom: .0469rem solid #fff; }
 nav.filter_nav>a.current { color: #d10310; border-bottom-color: #d10310;  }
 div.filter a { font-size: 14px; }		
@@ -16,7 +20,8 @@ div.filter_details { font-size: 14px; }
 [data-dpr="2"] div.filter_details { font-size: 28px; }
 [data-dpr="3"] div.filter_details { font-size: 42px; }
 /*排序筛选*/
-ul.filter_sort_list { display: none; background-color: #fff; }
+div.filter_details { }
+ul.filter_sort_list {  }
 ul.filter_sort_list li { padding: 0 .7812rem; border-bottom: 1px solid #e6e6e6; }
 ul.filter_sort_list li>a { display: block; color: #252825; line-height: 1.375rem; 
 		 }
@@ -24,7 +29,8 @@ ul.filter_sort_list li>a>i { margin-left:  6rem; display: none; }
 ul.filter_sort_list li.current>a { color: #d10310; }
 ul.filter_sort_list li.current>a>i { display: inline; }
 /*价格筛选*/
-div.filter_price_con { display: none; }
+div.filter_price_con, div.filter_sort_con { display: none; border-top: 1px solid #f5f5f5; 
+	 background-color: #fff; }
 dl.filter_details_kind { margin-bottom: .3125rem; background-color: #fff; }
 dt.filter_details_tit { padding: 0.1562rem .4688rem 0 .4688rem;
 		line-height: 1rem; font-size: 0.375rem; color: #333; }			
@@ -79,7 +85,7 @@ aside.aside_letter { position: absolute; right: 0.4rem; top: 50%; }
 aside ul.letter_list>li { text-align: center; line-height: 0.625rem; color: #d10310; }
 aside.aside_letter_fixed { position: fixed; }
 /*当前筛选条件*/
-div.current_filter { padding: 0.3125rem 0.4688rem 0.1562rem 0.4688rem; overflow: hidden; }
+div.current_filter { display: none; padding: 0.3125rem 0.4688rem 0.1562rem 0.4688rem; overflow: hidden; }
 ul.current_filter_list { float: left; width: 82%; overflow: hidden; }
 li.current_filter_item { float: left; border: 1px solid #e0e0e0;
 				margin: 0 0.3125rem 0.1562rem 0;	background-color: #fff; }

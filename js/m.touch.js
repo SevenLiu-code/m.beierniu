@@ -15,6 +15,23 @@ $(function(){
 	$('div.search_input_box span.input_clean').tap(function(){
 		$(this).parents().find('input').val('');
 	})
+
+	// 条件筛选页
+	// 价格筛选
+	$('nav.filter_nav a.filter_price').tap(function(){
+		$('header.head_index').addClass('head_position');
+		$('div.filter').addClass('filter_position');
+		$('div.filter_price_con').show(0);
+		$('div.mask').show(0);
+		$(this).addClass('current');
+	})
+	$('div.mask').tap(function(){
+		$('header.head_index').removeClass('head_position');
+		$('div.filter').removeClass('filter_position');
+		$(this).hide(0);
+		$(this).parents('body').find('.filter_details').hide(0);
+		$('nav.filter_nav').find('a.current').removeClass('current');
+	})
 })
 
 
