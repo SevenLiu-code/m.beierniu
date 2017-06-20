@@ -1,6 +1,6 @@
 $(function(){
 	//首页轮播
-	var homeSlide = new Swiper ('.swiper-container', {
+	var homeSlide = new Swiper ('.swiper-home-slide', {
 	    loop: true,
 	    autoplay: 5000,
 	    // 如果需要分页器
