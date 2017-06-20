@@ -60,7 +60,7 @@ div.city_select { position: fixed; left: 0; right: 0; top: 0; bottom: 0;
 		background-color: #f5f5f5; z-index: 11; }
 ul.city_select_list { padding: 0.3125rem 0.4688rem; overflow: hidden; }
 ul.city_select_list>li { float: left; width: 25%;  
-		font-size: 14rem;  }
+		font-size: 14px;  }
 [data-dpr="2"] ul.city_select_list>li { font-size: 28px; }	
 [data-dpr="3"] ul.city_select_list>li { font-size: 48px; }	
 ul.city_select_list>li>a { display: block; width: 1.8rem;  color: #666;
