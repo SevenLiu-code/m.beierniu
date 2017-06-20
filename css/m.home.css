@@ -69,7 +69,7 @@ li.h_nav_item.service>a>i { background-image: url(../images/base/service.png); }
 li.h_nav_item.ask>a>i { background-position: 0 -4.8125rem; }	
 
 /*首页车辆展示种类标题	*/
-section.car_show { padding: 0.4688rem 0 0.7812rem 0; }	
+section.car_show { padding: 0.4688rem 0 0.7812rem 0; overflow: hidden; }	
 ul.car_show_tit { display: flex; display: -webkit-flex; }
 ul.car_show_tit.swiper-pagination { position: relative; bottom: 0; }
 ul.car_show_tit.swiper-pagination>li.swiper-pagination-bullet { width: 33.33%;
