@@ -28,27 +28,46 @@ $(function(){
 	});
  //条件筛选页
 	// 价格筛选
-	$('nav>a.filter_price, nav>a.filter_sort').tap(function(){
-		$('header.head_index').addClass('head_position');
-		$('div.filter').addClass('filter_position');
-		$('div.mask').show();
-		$('nav.filter_nav>a').removeClass('current');
-		$(this).addClass('current');
-		$('nav.filter_nav>a>i.icon-angle-up').removeClass().addClass('icon-angle-down');
-		$(this).find('i').removeClass().addClass('icon-angle-up');
-
-		$('div.filter_details').hide().eq(1).show();
+	$('nav>a.filter_price').tap(function(){
+		 if ($('div.filter').hasClass('filter_position')){
+		 	$('header.head_index').removeClass('head_position');
+			$('div.filter').removeClass('filter_position');
+			$('div.mask').hide();
+			$(this).parents('body').find('.filter_details').hide();
+			$('nav.filter_nav').find('a.current').removeClass('current');
+			$('nav.filter_nav>a>i').removeClass().addClass('icon-angle-down');
+		 }else{
+		 	$('header.head_index').addClass('head_position');
+		 	$('div.filter').addClass('filter_position')
+		 	$('div.mask').show();
+			$('nav.filter_nav>a').removeClass('current');
+			$(this).addClass('current');
+			$('nav.filter_nav>a>i.icon-angle-up').removeClass().addClass('icon-angle-down');
+			$(this).find('i').removeClass().addClass('icon-angle-up');
+			$('div.filter_details').hide().eq(1).show();
+		 }
+		
 	});
 	//排序
 	$('nav>a.filter_sort').tap(function(){
-		$('header.head_index').addClass('head_position');
-		$('div.filter').addClass('filter_position');
-		$('div.mask').show();
-		$('nav.filter_nav>a').removeClass('current');
-		$(this).addClass('current');
-		$(this).find('i').removeClass().addClass('icon-angle-up');
-		$('div.filter_details').hide().eq(0).show();
+		if ( $('div.filter').hasClass('filter_position') ){
+			$('div.filter').removeClass('filter_position');
+			$('div.mask').hide();
+			$(this).parents('body').find('.filter_details').hide();
+			$('nav.filter_nav').find('a.current').removeClass('current');
+			$('nav.filter_nav>a>i').removeClass().addClass('icon-angle-down');
+		 }else{
+			$('header.head_index').addClass('head_position');
+		 	$('div.filter').addClass('filter_position')
+		 	$('div.mask').show();
+			$('nav.filter_nav>a').removeClass('current');
+			$(this).addClass('current');
+			$('nav.filter_nav>a>i.icon-angle-up').removeClass().addClass('icon-angle-down');
+			$(this).find('i').removeClass().addClass('icon-angle-up');
+			$('div.filter_details').hide().eq(0).show();
+		}	
 	});
+	//条件筛选收起
 	$('div.mask').tap(function(){
 		$('header.head_index').removeClass('head_position');
 		$('div.filter').removeClass('filter_position');
