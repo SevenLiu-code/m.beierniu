@@ -81,7 +81,14 @@ $(function(){
 		$('div.filter_more a.active').each(function(index, element){
 			arry.push($(element).attr('data'));
 		})
-		alert(arry);
+		$.ajax({
+			type: 'POST',
+			url: '',
+			data: arry,
+			success: function(data){
+    
+  			}
+		})
 	})
 })
 
