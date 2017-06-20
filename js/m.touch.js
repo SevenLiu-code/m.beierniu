@@ -29,8 +29,8 @@ $(function(){
  //条件筛选页
 	// 价格筛选
 	$('nav>a.filter_price').tap(function(){
-		 if ($(this).hasClass('current')){
-		 	$('header.head_index').removeClass('head_position');
+		 if ($(this).hasClass('current')){//判断当前状态
+		 	$('header.head_index').removeClass('head_position');//头部定位
 			$('div.filter').removeClass('filter_position');
 			$('div.mask').hide();
 			$(this).parents('body').find('.filter_details').hide();
@@ -49,8 +49,8 @@ $(function(){
 	});
 	//排序
 	$('nav>a.filter_sort').tap(function(){
-		if ( $(this).hasClass('current') ){
-			$('header.head_index').removeClass('head_position');
+		if ( $(this).hasClass('current') ){//判断当前状态
+			$('header.head_index').removeClass('head_position');//头部定位
 			$('div.filter').removeClass('filter_position');
 			$('div.mask').hide();
 			$(this).parents('body').find('.filter_details').hide();
