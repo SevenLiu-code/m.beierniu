@@ -26,19 +26,29 @@ $(function(){
 		$(this).parents('.city_select').hide();
 		$('.hidden_part').show();
 	});
- // 条件筛选页
+ //条件筛选页
 	// 价格筛选
 	$('nav>a.filter_price, nav>a.filter_sort').tap(function(){
-		var x = $(this).attr('class').replace('filter_', '');
 		$('header.head_index').addClass('head_position');
 		$('div.filter').addClass('filter_position');
-		$('div.filter_details').removeClass('filter_details_z').show();
+		$('div.mask').show();
+		$('nav.filter_nav>a').removeClass('current');
+		$(this).addClass('current');
+		$('nav.filter_nav>a>i.icon-angle-up').removeClass().addClass('icon-angle-down');
+		$(this).find('i').removeClass().addClass('icon-angle-up');
+
+		$('div.filter_details').hide().eq(1).show();
+	});
+	//排序
+	$('nav>a.filter_sort').tap(function(){
+		$('header.head_index').addClass('head_position');
+		$('div.filter').addClass('filter_position');
 		$('div.mask').show();
 		$('nav.filter_nav>a').removeClass('current');
 		$(this).addClass('current');
 		$(this).find('i').removeClass().addClass('icon-angle-up');
-		$('div.filter_' + x + '_con').addClass('filter_details_z');
-	})
+		$('div.filter_details').hide().eq(0).show();
+	});
 	$('div.mask').tap(function(){
 		$('header.head_index').removeClass('head_position');
 		$('div.filter').removeClass('filter_position');
