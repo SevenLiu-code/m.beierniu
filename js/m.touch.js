@@ -51,6 +51,7 @@ $(function(){
 	//排序
 	$('nav>a.filter_sort').tap(function(){
 		if ( $('div.filter').hasClass('filter_position') ){
+			$('header.head_index').removeClass('head_position');
 			$('div.filter').removeClass('filter_position');
 			$('div.mask').hide();
 			$(this).parents('body').find('.filter_details').hide();
