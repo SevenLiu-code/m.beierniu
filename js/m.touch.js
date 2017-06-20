@@ -70,6 +70,18 @@ $(function(){
 		 	$(this).parents('.filter_details_list').find('a.active').removeClass('active');
 		 	$(this).addClass('active');
 		 }
+	});
+//重置更多筛选
+	$('li.filter_reset').tap(function(){
+		$('div.filter_more a.active').removeClass('active');
+	});	
+//提交更多筛选
+	$('li.filter_found').tap(function(){
+		var arry = [];
+		$('div.filter_more a.active').each(function(index, element){
+			arry.push($(element).attr('data'));
+		})
+		alert(arry);
 	})
 })
 
