@@ -18,12 +18,16 @@ $(function(){
 
 	// 条件筛选页
 	// 价格筛选
-	$('nav.filter_nav a.filter_price').tap(function(){
+	$('nav>a.filter_price, nav>a.filter_sort').tap(function(){
+		var x = $(this).attr('class').replace('filter_', '');
 		$('header.head_index').addClass('head_position');
 		$('div.filter').addClass('filter_position');
-		$('div.filter_price_con').show(0);
+		$('div.filter_details').removeClass('filter_details_z').show(0);
 		$('div.mask').show(0);
+		$('nav.filter_nav>a').removeClass('current');
 		$(this).addClass('current');
+		$(this).find('i').removeClass().addClass('icon-angle-up');
+		$('div.filter_' + x + '_con').addClass('filter_details_z');
 	})
 	$('div.mask').tap(function(){
 		$('header.head_index').removeClass('head_position');
@@ -31,6 +35,7 @@ $(function(){
 		$(this).hide(0);
 		$(this).parents('body').find('.filter_details').hide(0);
 		$('nav.filter_nav').find('a.current').removeClass('current');
+		$('nav.filter_nav>a>i').removeClass().addClass('icon-angle-down');
 	})
 })
 
