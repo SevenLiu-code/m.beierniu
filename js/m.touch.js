@@ -32,7 +32,7 @@ $(function(){
 		 if ($(this).hasClass('current')){//判断当前状态
 		 	$('header.head_index').removeClass('head_position');//头部定位
 			$('div.filter').removeClass('filter_position');
-			$('div.mask').hide();
+			$('div.mask').hide();//遮罩隐藏
 			$(this).parents('body').find('.filter_details').hide();
 			$('nav.filter_nav').find('a.current').removeClass('current');
 			$('nav.filter_nav>a>i').removeClass().addClass('icon-angle-down');
@@ -53,26 +53,6 @@ $(function(){
 			
 		 }
 	});
-	//排序
-	// $('nav>a.filter_sort').tap(function(){
-	// 	if ( $(this).hasClass('current') ){//判断当前状态
-	// 		$('header.head_index').removeClass('head_position');//头部定位
-	// 		$('div.filter').removeClass('filter_position');
-	// 		$('div.mask').hide();
-	// 		$(this).parents('body').find('.filter_details').hide();
-	// 		$('nav.filter_nav').find('a.current').removeClass('current');
-	// 		$('nav.filter_nav>a>i').removeClass().addClass('icon-angle-down');
-	// 	 }else{
-	// 		$('header.head_index').addClass('head_position');
-	// 	 	$('div.filter').addClass('filter_position')
-	// 	 	$('div.mask').show();
-	// 		$('nav.filter_nav>a').removeClass('current');
-	// 		$(this).addClass('current');
-	// 		$('nav.filter_nav>a>i.icon-angle-up').removeClass().addClass('icon-angle-down');
-	// 		$(this).find('i').removeClass().addClass('icon-angle-up');
-	// 		$('div.filter_details').hide().eq(0).show();
-	// 	}	
-	// });
 	//条件筛选收起
 	$('div.mask').tap(function(){
 		$('header.head_index').removeClass('head_position');
@@ -81,6 +61,15 @@ $(function(){
 		$(this).parents('body').find('.filter_details').hide();
 		$('nav.filter_nav').find('a.current').removeClass('current');
 		$('nav.filter_nav>a>i').removeClass().addClass('icon-angle-down');
+	})
+//更多筛选页
+	$('div.filter_more .filter_details_list a').tap(function(){
+		 if ( $(this).hasClass('active') ){
+		 	$(this).removeClass('active');
+		 }else {
+		 	$(this).parents('.filter_details_list').find('a.active').removeClass('active');
+		 	$(this).addClass('active');
+		 }
 	})
 })
 
