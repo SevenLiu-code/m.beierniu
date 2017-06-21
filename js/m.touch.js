@@ -121,11 +121,11 @@ $(function(){
 		$('body').addClass('body_overflow');
 	})
 	//车辆详情页弹出框关闭
-	$('div.car_detail_mask').tap(function(){
+	$('div.car_detail_mask, button.ask_box_close').tap(function(){
 		$('html').css({'height': 'auto'});
 		$('body').removeClass('body_overflow');
 		$('div.ask_box').hide();
-		$(this).hide();
+		$('div.car_detail_mask').hide();
 	})
 
 })
