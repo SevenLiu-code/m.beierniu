@@ -24,5 +24,16 @@ $(function(){
       		
   		}
   }) 
+	//图片详情轮播
+	var carImg_swiper = new Swiper('.carImg-detail-swiper', {
+		loop: true,
+		pagination: '.swiper-pagination',
+		paginationType : 'fraction',
+		paginationFractionRender: function (swiper, currentClassName, totalClassName) {
+	      return '<span class="' + currentClassName + '"></span>' +
+	             ' / ' +
+	             '<span class="' + totalClassName + '"></span>';
+  }
+	})
 })
 

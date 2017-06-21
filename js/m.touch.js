@@ -100,6 +100,18 @@ $(function(){
 	$('aside.brand_series_con').on("swipeRight", function(){
 		$('aside.brand_series_con').hide();
 	});
+
+//车辆详情页
+	//配置参数进入	
+	$('div._info_base_more').tap(function(){
+		$('.hidden_part').hide();
+		$('div.car_parameter').show();
+	})
+	//配置参数退出
+	$('div.car_parameter_head>a').tap(function(){
+		$(this).parents('div.car_parameter').hide();
+		$('.hidden_part').show();
+	})
 })
 
 
