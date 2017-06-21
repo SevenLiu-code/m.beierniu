@@ -142,10 +142,21 @@ $(function(){
 			//验证验证码
 			var l_price = $box.find('input.l_price').val();
 			if ( RE_l_price.test(l_price) ) {
-				
+
 			}else{
 				$box.find('p.error_text').html('输入价格有误').show();
 			}
+		}else {
+			$box.find('p.error_text').html('手机号输入有误').show();
+		}
+	})
+	$('button.sell_car_commit').tap(function(){
+		var RE_phone = /^1[34578][\d]{9}/;
+		var $box = $(this).parents('div.ask_box');
+		var phone = $box.find('input.phone').val();
+		if ( RE_phone.test(phone) ) {
+			//验证验证码
+			
 		}else {
 			$box.find('p.error_text').html('手机号输入有误').show();
 		}
