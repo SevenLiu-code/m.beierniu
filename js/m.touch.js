@@ -95,11 +95,13 @@ $(function(){
 	$('li.brand_details_item>a').tap(function(){
 		$(this).parents('div.filter_brand').find('aside.brand_series_con').hide();
 		$(this).parent().find('aside.brand_series_con').show();
-	})
+	});
+	//子系列右滑动隐藏
 	$('aside.brand_series_con').on("swipeRight", function(){
-		console.log(1);
-		$('aside.brand_series_con').hide();
-	})
+		$('aside.brand_series_con').hide(100);
+	});
+	//阻止冒泡
+	$("aside.brand_series_con").preventScroll();
 })
 
 
