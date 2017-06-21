@@ -59,7 +59,7 @@ p._info_buyCar_text { margin-top: 0.2344rem; font-size: 14px; color: #1B1B1B; }
 /*相似推荐*/
 div.car_d_info_kind>ul.car_show_main>li{ padding: 0; }
 /*按钮*/
-section.car_detail_btn { position: fixed; z-index: 3; bottom: 0; left: 0; right: 0;
+section.car_detail_btn { position: fixed; z-index: 1; bottom: 0; left: 0; right: 0;
 		box-shadow: 0 0 10px rgba(0,0,0,.3); }
 section.car_detail_btn>div {float: left; width: 50%; line-height: 1.3rem; 
 	text-align: center; color: #fff; font-size: 16px; }
@@ -98,9 +98,8 @@ div.carImg_counts>span { color: #fff;  }
 
 /*交互弹出框*/
 div.ask_box { position: fixed; top: 0.1562rem; left: 0.5rem; 
-	right: 0.5rem; font-size: 14px; border-radius: 0.25rem;
-	text-align: center; background-color: #fff; }
-div.sell_car_box { display: none; }	
+	right: 0.5rem; font-size: 14px; border-radius: 0.25rem; z-index: 9;
+	display: none; text-align: center; background-color: #fff; }
 [data-dpr="2"] div.ask_box { font-size: 28px; }	
 [data-dpr="3"] div.ask_box { font-size: 48px; }
 div.ask_box_head>h2 { padding: 0.32rem 0; font-size: 18px; }

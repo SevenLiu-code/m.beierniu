@@ -112,6 +112,22 @@ $(function(){
 		$(this).parents('div.car_parameter').hide();
 		$('.hidden_part').show();
 	})
+	//车辆详情页弹出框开启
+	$('.car_detail_btn>div').tap(function(){
+		var index = $(this).index();
+		$('div.car_detail_mask').show();
+		$('div.ask_box').eq(index).show();
+		$('html').css({'height': '100%'});
+		$('body').addClass('body_overflow');
+	})
+	//车辆详情页弹出框关闭
+	$('div.car_detail_mask').tap(function(){
+		$('html').css({'height': 'auto'});
+		$('body').removeClass('body_overflow');
+		$('div.ask_box').hide();
+		$(this).hide();
+	})
+
 })
 
 

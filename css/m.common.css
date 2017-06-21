@@ -1,6 +1,7 @@
 html { background-color: #f5f5f5; width: 100%; }
 body { background-color: #f5f5f5; width: 100%; min-width: 320px; max-width: 1300px;
 	margin: 0 auto; }
+body.body_overflow { height: 100%; overflow: hidden; }	
 /*mobile头部公用*/
 header.head_index { overflow: hidden; display: flex; display: -webkit-flex;
 	align-items: center; padding: 0.281rem 0.468rem; justify-content: space-between;
@@ -103,8 +104,10 @@ div.car_show_price>strong { font-size: 0.5rem; font-weight: 500; color: #d10310;
 div.car_show_price>span { color: #bec6ce; text-decoration: line-through;  }
 /*遮罩*/
 div.mask { position: fixed; top: 0; bottom: 0; left: 0; right: 0;
-	 display: none; background-color: rgba(0,0,0,.7); }
-
+	 display: none; background-color: rgba(0,0,0,.7); z-index: 3; }
+div.car_detail_mask { position: fixed; top: 0; bottom: 0; left: 0; right: 0;
+	 display: none; background-color: rgba(0,0,0,.7); z-index: 3; 
+ }
 
 
 
