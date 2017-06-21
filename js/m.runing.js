@@ -23,7 +23,19 @@ $(function(){
 	    	}
       		
   		}
-  }) 
+
+  })
+  //车辆详情页图片轮播
+ 	var car_details_swiper = new Swiper('.car-details-swiper', {
+ 		loop: true,
+		pagination: '.swiper-pagination',
+		paginationType: 'fraction',
+		paginationFractionRender: function (swiper, currentClassName, totalClassName) {
+	      return '<span class="_img_count_bg"></span><span class="' + currentClassName + '"></span>' +
+	             '&nbsp;/&nbsp;' +
+	             '<span class="' + totalClassName + '"></span>';
+  		}
+ 	})
 	//图片详情轮播
 	var carImg_swiper = new Swiper('.carImg-detail-swiper', {
 		loop: true,
@@ -33,7 +45,7 @@ $(function(){
 	      return '<span class="' + currentClassName + '"></span>' +
 	             ' / ' +
 	             '<span class="' + totalClassName + '"></span>';
-  }
+  		}
 	})
 })
 
