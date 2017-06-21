@@ -71,11 +71,11 @@ $(function(){
 		 	$(this).addClass('active');
 		 }
 	});
-//重置更多筛选
+	//重置更多筛选
 	$('li.filter_reset').tap(function(){
 		$('div.filter_more a.active').removeClass('active');
 	});	
-//提交更多筛选
+	//提交更多筛选
 	$('li.filter_found').tap(function(){
 		var arry = [];
 		$('div.filter_more a.active').each(function(index, element){
@@ -89,6 +89,16 @@ $(function(){
     			
   			}
 		})
+	})
+//更多品牌页子系列
+	//品牌子系列弹出
+	$('li.brand_details_item>a').tap(function(){
+		$(this).parents('div.filter_brand').find('aside.brand_series_con').hide();
+		$(this).parent().find('aside.brand_series_con').show();
+	})
+	$('body.filter_brand_body').on("swipeLeft, swipeRight, swipeUp, swipeDown", function(){
+		console.log(1);
+		$('aside.brand_series_con').hide();
 	})
 })
 
