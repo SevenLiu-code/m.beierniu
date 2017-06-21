@@ -86,7 +86,7 @@ $(function(){
 			url: '',
 			data: arry,
 			success: function(data){
-    
+    			
   			}
 		})
 	})
