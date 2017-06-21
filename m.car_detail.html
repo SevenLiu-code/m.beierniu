@@ -240,10 +240,24 @@
 			</table>
 		</div>
 	</div> 
+	<!-- 询问弹出框开始 -->
 	<div class="ask_box l_price_box">
-			
+		<div class="ask_box_head">
+			<h2>预约看车</h2>
+			<div class="input_box">
+				<input type="text" placeholder="请输入您的手机号码">
+			</div>
+			<div class="input_box input_code_box">
+				<input type="text" placeholder="请输入验证码">
+				<button type="button"  class="sell_get_code">获取验证码</button>
+			</div>
+			<div class="button_box">
+				<button type="button" class="ask_box_close">取消</button>
+				<button type="button" class="sell_car_commit">提交</button>
+			</div>
+		</div>
 	</div>
-	<div class="ask_box sell_car_box box_s">
+	<div class="ask_box sell_car_box">
 		<div class="ask_box_head">
 			<h2>我要砍价</h2>
 		</div>
@@ -253,14 +267,17 @@
 		<div class="input_box">
 			<input type="text" placeholder="请输入您的手机号">
 		</div>
-		<div class="form_row">
-			<div class="input_box">
-				<input type="text" placeholder="请输入验证码">
-			</div>
-			<div class="input_box">
-				<button>获取验证码</button>
-			</div>
+		<div class="input_box input_code_box">
+			<input type="text" placeholder="请输入验证码">
+			<button type="button"  class="sell_get_code">获取验证码</button>
+		</div>
+		<div class="button_box">
+			<button type="button" class="ask_box_close">取消</button>
+			<button type="button" class="l_price_commit">提交</button>
 		</div>
 	</div>
+	<!-- 询问弹出框结束 -->
+	<!-- 遮罩 -->
+	<div class="mask"></div>
 </body>
 </html>
