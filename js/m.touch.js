@@ -98,10 +98,8 @@ $(function(){
 	});
 	//子系列右滑动隐藏
 	$('aside.brand_series_con').on("swipeRight", function(){
-		$('aside.brand_series_con').hide(100);
+		$('aside.brand_series_con').hide();
 	});
-	//阻止冒泡
-	$("aside.brand_series_con").preventScroll();
 })
 
 

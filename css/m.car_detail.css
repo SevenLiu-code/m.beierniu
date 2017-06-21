@@ -68,6 +68,7 @@ section.car_detail_btn>div {float: left; width: 50%; line-height: 1.3rem;
 section.car_detail_btn>div._l_price_btn { background-color: #2ab40f; }	
 section.car_detail_btn>div._sell_car_btn { background-color: #e2ae30; }
 /*配置参数*/
+div.car_parameter { display: none; }
 div.car_parameter_kind { padding: 0.34rem 0; margin-bottom: 0.3125rem;
 	 background-color: #fff; }
 div.car_parameter_kind .caption { margin: 0 0.4688rem 0.3125rem 0.4688rem;  }
