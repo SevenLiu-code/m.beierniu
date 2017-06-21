@@ -98,7 +98,7 @@ div.carImg_counts>span { color: #fff;  }
 
 /*交互弹出框*/
 div.ask_box { position: fixed; top: 0.1562rem; left: 0.5rem; 
-	right: 0.5rem; font-size: 14px; 
+	right: 0.5rem; font-size: 14px; display: none;
 	padding: 0 0.7812rem;
 	text-align: center; background-color: #fff; }
 [data-dpr="2"] div.ask_box { font-size: 28px; }	
