@@ -96,7 +96,7 @@ $(function(){
 		$(this).parents('div.filter_brand').find('aside.brand_series_con').hide();
 		$(this).parent().find('aside.brand_series_con').show();
 	})
-	$('body.filter_brand_body').on("swipeLeft, swipeRight, swipeUp, swipeDown", function(){
+	$('a.aside.brand_series_con').on("swipeRight", function(){
 		console.log(1);
 		$('aside.brand_series_con').hide();
 	})
