@@ -121,7 +121,9 @@ li.current_filter_item>a { display: block; padding: 0 0.3125rem;
 [data-dpr="3"] li.current_filter_item>a { font-size: 36px; }
 li.current_filter_item>a>i { margin-left: 0.2344rem; color: #aaa;
 	 font-size: 0.3125rem; vertical-align: -1px; }
- div.current_filter_reset { float: right; margin-right: 0.3125rem;
- 	line-height: 0.9375rem; color: #888; }
+ div.current_filter_reset { float: right; margin-right: 0.35rem;
+ 	line-height: 0.9375rem; color: #888; font-size: 12px; }
+[data-dpr="2"] div.current_filter_reset { font-size: 24px; }
+[data-dpr="3"] div.current_filter_reset { font-size: 36px; }		
 /* 收索页车辆展示	*/
 div.buy_car_show { background-color: #fff; overflow: hidden; }

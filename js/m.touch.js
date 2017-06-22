@@ -64,6 +64,7 @@ $(function(){
 	})
 	//更多筛选弹出
 	$('.filter_nav a.filter_more').tap(function(){
+		$('div.mask').hide();//遮罩隐藏
 		$('.hidden_part').hide();
 		$('.filter_more').css({'display':'block'});
 	})
@@ -72,6 +73,8 @@ $(function(){
 		$('div.filter_more .filter_details_list a').removeClass('active');
 		$('.filter_more').hide();
 		$('.hidden_part').show();
+		var bool = $('nav>a.filter_price, nav>a.filter_sort').hasClass('current');
+		if (bool) { $('div.mask').show(); }	
 		$('.filter_nav a.filter_more').css({'display':'block'});
 	});
   //更多筛选选中、取消
