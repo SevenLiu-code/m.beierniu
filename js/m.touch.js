@@ -156,7 +156,45 @@ $(function(){
 	//获取验证码
 	var car_detail_code = true;
 	$('button.sell_get_code').tap(function(){
-		car_d_getCode(car_detail_code, this);//获取验证码
+		if ( car_detail_code ) {
+				var	$box = $(this).parents('div.ask_box');
+				var Rex_phone = /^1[34578][\d]{9}/; 
+				var phone_val = $box.find('input.phone').val();
+				var $this = $(this);
+				if (phone_val == '') {
+					console.log(phone_val);
+					$box.find('p.error_text').html("请输入手机号").show();
+				}else if( !Rex_phone.test(phone_val) ) {
+					$box.find('p.error_text').html("输入手机号有误").show();
+				} else {
+					//发送验证码
+					$.ajax({
+						cache : true,
+						type : "POST",
+						url : "",
+						data : "",
+						async : false,
+						dataType:"json",
+						error: function(){
+							alert('。。。')
+						},
+						success: function(data) {
+							car_detail_code = false;
+							$box.find('p.error_text').html("发送成功").show();
+							var seconds = 60;
+							var waiting = setInterval(function(){
+								seconds--;
+								$this.html('重新发送（' + seconds + '）');
+								if (seconds <= 0) { 
+									clearInterval(waiting);
+									$this.html('获取验证码');
+									car_detail_code = true;
+									 }
+							}, 1000)
+						}
+					})	
+				}
+			}		
 	})
 	//弹出框表单验证
 	$('button.l_price_commit').tap(function(){
@@ -179,7 +217,9 @@ $(function(){
 								alert("Connection error");
 								},
 							success: function(){
-								
+								$('p.error_text').hide();
+								$('div.ask_box_inner').hide();
+								$('div.ask_box_success').show();
 							}	
 					 	})
 			}else{

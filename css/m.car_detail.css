@@ -102,7 +102,12 @@ div.carImg_counts>span { color: #fff;  }
 div.ask_box { position: fixed; top: 0.1562rem; left: 0.5rem; 
 	right: 0.5rem; font-size: 14px; border-radius: 0.25rem; z-index: 9;
 	display: none; text-align: center; background-color: #fff; }
-/*div.sell_car_box { display: none; }	*/
+/*div.sell_car_box { display: none; }*/
+div.ask_box_success { display: none; padding: 0.9rem 0; }
+div.ask_box_success>img { display: block; margin: 0 auto; 
+		width: 1.875rem; }
+div.ask_box_success>p { font-size: 0.4375rem; line-height: 0.9375rem; }
+div.ask_box_success>div { font-size: 0.375rem; color: #999; }		
 p.error_text { margin-top: 0.1562rem; padding-left: 0.7812rem;
 		text-align: left; font-size: 12px;
 		text-indent: .5rem; display: none; color: #d10310; font-style: italic;}
