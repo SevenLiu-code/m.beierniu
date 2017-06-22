@@ -135,14 +135,26 @@ $(function(){
 	//弹出框表单验证
 	$('button.l_price_commit').tap(function(){
 		var RE_phone = /^1[34578][\d]{9}/;
-		var RE_l_price = /^(([1-9]*)|(([0]\.\d{1,2}|[1-9][0-9][0-9]*\.\d{1,2})))$/;
+		var Reg_ask_price =/^(([0-9]{1,3})|([0]\.\d{1,3}|[1-9][0-9]*\.\d{1,3}))$/;				
+						//不超过999万，最多三位小数
 		var $box = $(this).parents('div.ask_box');
 		var phone = $box.find('input.phone').val();
-		if ( RE_phone.test(phone) ) {
+		if ( RE_phone.test(phone) ) {//手机号验证通过
 			//验证验证码
 			var l_price = $box.find('input.l_price').val();
-			if ( RE_l_price.test(l_price) ) {
-
+			if ( RE_l_price.test(l_price) ) {//价格验证通过
+					$.ajax({
+				 		cache: true,
+				 		type: 'post',
+				 		url: '',
+				 		data: '',
+				 		async: false,
+				 		error: function(request) {
+							alert("Connection error");
+							},
+						success: function(){
+						
+						}	
 			}else{
 				$box.find('p.error_text').html('输入价格有误').show();
 			}
@@ -152,6 +164,7 @@ $(function(){
 	})
 	$('button.sell_car_commit').tap(function(){
 		var RE_phone = /^1[34578][\d]{9}/;
+
 		var $box = $(this).parents('div.ask_box');
 		var phone = $box.find('input.phone').val();
 		if ( RE_phone.test(phone) ) {
