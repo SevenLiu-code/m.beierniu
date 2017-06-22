@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>m.sale_car</title>
+	<meta charset="UTF-8">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<link rel="stylesheet" type="text/css" href="./css/m.reset.css">
+	<link rel="stylesheet" type="text/css" href="./css/m.style.css">
+	<link rel="stylesheet" type="text/css" href="./css/swiper.min.css">
+	<link rel="stylesheet" type="text/css" href="./css/m.common.css">
+	<link rel="stylesheet" type="text/css" href="./css/m.home.css">
+	<link rel="stylesheet" type="text/css" href="./css/m.filter_car.css">
+	<link rel="stylesheet" type="text/css" href="./css/m.car_detail.css">
+	<link rel="stylesheet" type="text/css" href="./css/m.syn.css">
+	<script type="text/javascript">
+			!function(N,M){function L(){var a=I.getBoundingClientRect().width;a/F>540&&(a=540*F);var d=a/10;I.style.fontSize=d+"px",D.rem=N.rem=d}var K,J=N.document,I=J.documentElement,H=J.querySelector('meta[name="viewport"]'),G=J.querySelector('meta[name="flexible"]'),F=0,E=0,D=M.flexible||(M.flexible={});if(H){console.warn("将根据已有的meta标签来设置缩放比例");var C=H.getAttribute("content").match(/initial\-scale=([\d\.]+)/);C&&(E=parseFloat(C[1]),F=parseInt(1/E))}else{if(G){var B=G.getAttribute("content");if(B){var A=B.match(/initial\-dpr=([\d\.]+)/),z=B.match(/maximum\-dpr=([\d\.]+)/);A&&(F=parseFloat(A[1]),E=parseFloat((1/F).toFixed(2))),z&&(F=parseFloat(z[1]),E=parseFloat((1/F).toFixed(2)))}}}if(!F&&!E){var y=N.navigator.userAgent,x=(!!y.match(/android/gi),!!y.match(/iphone/gi)),w=x&&!!y.match(/OS 9_3/),v=N.devicePixelRatio;F=x&&!w?v>=3&&(!F||F>=3)?3:v>=2&&(!F||F>=2)?2:1:1,E=1/F}if(I.setAttribute("data-dpr",F),!H){if(H=J.createElement("meta"),H.setAttribute("name","viewport"),H.setAttribute("content","initial-scale="+E+", maximum-scale="+E+", minimum-scale="+E+", user-scalable=no"),I.firstElementChild){I.firstElementChild.appendChild(H)}else{var u=J.createElement("div");u.appendChild(H),J.write(u.innerHTML)}}N.addEventListener("resize",function(){clearTimeout(K),K=setTimeout(L,300)},!1),N.addEventListener("pageshow",function(b){b.persisted&&(clearTimeout(K),K=setTimeout(L,300))},!1),"complete"===J.readyState?J.body.style.fontSize=12*F+"px":J.addEventListener("DOMContentLoaded",function(){J.body.style.fontSize=12*F+"px"},!1),L(),D.dpr=N.dpr=F,D.refreshRem=L,D.rem2px=function(d){var c=parseFloat(d)*this.rem;return"string"==typeof d&&d.match(/rem$/)&&(c+="px"),c},D.px2rem=function(d){var c=parseFloat(d)/this.rem;return"string"==typeof d&&d.match(/px$/)&&(c+="rem"),c}}(window,window.lib||(window.lib={}));
+	</script>
+	<script type="text/javascript" src="./js/zepto.min.js"></script>
+	<script type="text/javascript" src="./js/fastclick.js"></script>
+	<script type="text/javascript" src="./js/swiper.jquery.min.js"></script>
+	<script type="text/javascript">
+		$(function() { FastClick.attach(document.body); });
+	</script>
+	<script type="text/javascript" src="./js/m.runing.js"></script>
+	<script type="text/javascript" src="./js/m.define.js"></script>
+	<script type="text/javascript" src="./js/m.touch.js"></script>
+	<script type="text/javascript" src="./js/m.common.js"></script>
+</head>
+<body>
+	<header class="return_header cover_head sale_car_header">
+		<a href="javascript:;" class="return_iocn icon-angle-left"></a>
+		<p><i class="return_header_icon"></i>筛选</p>
+	</header>
+	<section class="sale_car_bg">
+		<h3>最好的卖车方案，最高的出手价格</h3>
+		<div class="sale_sub clearfix">
+			<input class="box_s" type="text" maxlength="11" placeholder="请输入您的手机号码"><button class="box_s" type="button">我要卖车</button>
+		</div>
+		<p class="error_text">错误提示</p>
+		<p class="sale_car_tell">咨询热线：400-0510-700</p>
+	</section>
+	<section class="sale_car_unit sale_car_process">
+		<div class="caption">卖车流程</div>
+		<div class="caption_line"></div>
+		<ul class="_car_process_list">
+			<li class="_car_process_item">
+				<div class="commit_bg"></div>
+				<p>提交信息</p>
+			</li>
+			<li class="_car_process_item">
+				<div class="goto_bg"></div>
+				<p>人车到店</p>
+			</li>
+			<li class="_car_process_item">
+				<div class="sign_bg"></div>
+				<p>签约过户</p>
+			</li>
+		</ul>
+	</section>
+	<section class="sale_car_unit sale_car_process">
+		<div class="caption">卖车小知识</div>
+		<div class="caption_line"></div>
+		<ul class="_car_knowledge_list">
+			<li class="_car_knowledge_item">
+				<h3>在倍儿牛卖车能到理想的价位吗？</h3>
+			</li>
+		</ul>
+	</section>
+</body>
+</html>

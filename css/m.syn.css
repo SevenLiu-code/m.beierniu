@@ -1,0 +1,64 @@
+/*返回头部*/
+header.return_header { background-color: #FF5757; 
+ }
+header.return_header>a.return_iocn{ color: #fff; }
+header.return_header>p { color: #fff; line-height: 1.2rem; vertical-align: middle; }
+header.return_header i.return_header_icon { display: inline-block; width: 0.8rem;
+ height: 0.8rem; background-size: 100%; vertical-align: -0.22rem; 
+ margin-right: 0.3125rem;}
+header.sale_car_header i.return_header_icon { background-image: url(../images/base/sale_car.png); }	
+/*我要卖车*/
+section.sale_car_bg { height: 4.6875rem; overflow: hidden;
+	background-image: url(../images/base/sale_car_bg.png); color: #fff;
+	background-size: 100%; text-align: center; font-size: 14px; }
+[data-dpr="2"] section.sale_car_bg { font-size: 28px; }
+[data-dpr="3"] section.sale_car_bg { font-size: 42px; }
+section.sale_car_bg h3 { margin-top: .8rem; font-size: .44rem; 
+	font-weight: bold; 
+}
+div.sale_sub { display: flex; display: -webkit-flex; width: 6rem; 
+  margin: 0.5rem auto 0 auto; position: relative; height: 0.9375rem;
+  border: 1px solid #d10310;  font-size: .42rem;
+}
+div.sale_sub>input { width: 70%; height: 0.9375rem; border: none; 
+ font-size: 14px; text-indent: 0.3125rem; }
+
+div.sale_sub>button { width: 30%; height: 0.9375rem; border: none;
+  font-size: 14px; background-color: #d10310; color: #fff; }
+[data-dpr="2"] div.sale_sub>input,
+[data-dpr="2"] div.sale_sub>button { font-size: 24px; }
+[data-dpr="3"] div.sale_sub>input,
+[data-dpr="3"] div.sale_sub>button { font-size: 42px; }
+section.sale_car_bg	.error_text { width: 6rem; margin: 0 auto;
+	position: absolute;
+	padding-left: 0; text-indent: 0.3125rem; text-align: center;  }
+section.sale_car_bg .sale_car_tell { margin-top: 0.45rem;  }
+/*sale_car单元*/
+section.sale_car_unit { margin-top: 0.3125rem; padding: 0.4688rem 0;
+	 background-color: #fff; }
+section.sale_car_unit>.caption { margin: 0 0.4688rem; }
+ul._car_process_list { display: flex; display: -webkit-flex; 
+		padding-top: 0.4688rem; }
+li._car_process_item { width: 33.3%; text-align: center; }
+li._car_process_item>div { width: 1.4375rem; height: 1.4375rem;
+	margin: 0 auto; background-size: 100%; }
+li._car_process_item>p{ margin-top: 0.1562rem; }
+li._car_process_item>div.commit_bg { background-image: url(../images/base/commit_bg.png); }
+li._car_process_item>div.goto_bg { background-image: url(../images/base/goto_bg.png); }
+li._car_process_item>div.sign_bg{ background-image: url(../images/base/sign_bg.png); }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
