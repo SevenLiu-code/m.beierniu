@@ -27,7 +27,7 @@ $(function(){
 		$('.hidden_part').show();
 	});
  //条件筛选页
-	// 价格筛选
+	// 价格筛选、排序方式
 	$('nav>a.filter_price, nav>a.filter_sort').tap(function(){
 		 if ($(this).hasClass('current')){//判断当前状态
 		 	$('header.head_index').removeClass('head_position');//头部定位
@@ -62,7 +62,19 @@ $(function(){
 		$('nav.filter_nav').find('a.current').removeClass('current');
 		$('nav.filter_nav>a>i').removeClass().addClass('icon-angle-down');
 	})
-//更多筛选页
+	//更多筛选弹出
+	$('.filter_nav a.filter_more').tap(function(){
+		$('.hidden_part').hide();
+		$('.filter_more').css({'display':'block'});
+	})
+	//更多筛选关闭
+	$('a.filter_more_close').tap(function(){
+		$('div.filter_more .filter_details_list a').removeClass('active');
+		$('.filter_more').hide();
+		$('.hidden_part').show();
+		$('.filter_nav a.filter_more').css({'display':'block'});
+	});
+  //更多筛选选中、取消
 	$('div.filter_more .filter_details_list a').tap(function(){
 		 if ( $(this).hasClass('active') ){
 		 	$(this).removeClass('active');
@@ -229,18 +241,7 @@ $(function(){
 			$box.find('p.error_text').html('手机号输入有误').show();
 		}
 	})
-	// $('button.sell_car_commit').tap(function(){
-	// 	var RE_phone = /^1[34578][\d]{9}/;
-
-	// 	var $box = $(this).parents('div.ask_box');
-	// 	var phone = $box.find('input.phone').val();
-	// 	if ( RE_phone.test(phone) ) {
-	// 		//验证验证码
-			
-	// 	}else {
-	// 		$box.find('p.error_text').html('手机号输入有误').show();
-	// 	}
-	// })
+	
 })
 
 
