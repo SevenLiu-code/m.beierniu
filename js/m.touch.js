@@ -144,17 +144,18 @@ $(function(){
 			var l_price = $box.find('input.l_price').val();
 			if ( RE_l_price.test(l_price) ) {//价格验证通过
 					$.ajax({
-				 		cache: true,
-				 		type: 'post',
-				 		url: '',
-				 		data: '',
-				 		async: false,
-				 		error: function(request) {
-							alert("Connection error");
-							},
-						success: function(){
-						
-						}	
+					 		cache: true,
+					 		type: 'post',
+					 		url: '',
+					 		data: '',
+					 		async: false,
+					 		error: function(request) {
+								alert("Connection error");
+								},
+							success: function(){
+								
+							}	
+					 	})
 			}else{
 				$box.find('p.error_text').html('输入价格有误').show();
 			}
