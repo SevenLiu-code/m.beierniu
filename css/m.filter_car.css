@@ -58,7 +58,8 @@ ul.filter_details_list>li>a.active { border-color: #d10310; color: #d10310;
 	background-color: rgba(209,7,20,.1);  }	
 [data-dpr="2"] ul.filter_details_list>li>a { height: 80px; line-height: 80px; }
 [data-dpr="3"] ul.filter_details_list>li>a { height: 120px; line-height: 120px; }
-div.filter_more { display: none; margin-bottom: 1.6rem; }
+div.filter_more { display: none; padding-bottom: 0.4688rem; 
+	margin-bottom: .3rem; background-color: #fff; }
 /*更多筛选按钮*/
 .cover_head, div.car_parameter_head { display:flex; display: -webkit-flex; 
 	padding: 0 0.4688rem; border-bottom: 1px solid #dbdbdb; line-height: 1.2rem; 
