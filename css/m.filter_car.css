@@ -32,9 +32,10 @@ ul.filter_sort_list li.current>a>i { display: inline; }
 div.filter_price_con, div.filter_sort_con { display: none; border-top: 1px solid #f5f5f5; 
 	 position: absolute; right: 0; left: 0; background-color: #fff; }
 dl.filter_details_kind { background-color: #fff; }
+dl.filter_details_kind p.error_text { margin-top: 0; }
 dt.filter_details_tit { padding: 0.1562rem .4688rem 0 .4688rem;
 		line-height: 1rem; font-size: 0.375rem; color: #333; }			
-dd.filter_set_price { align-items: center; padding: .2rem 0.4688rem .3rem .6rem;
+dd.filter_set_price { align-items: center; padding: .2rem 0.4688rem .2rem .6rem;
 	display: flex; display: -webkit-flex; align-items: center;
 	background-color: #fff; }
 

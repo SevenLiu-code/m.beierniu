@@ -67,7 +67,8 @@ section.car_detail_btn>div {float: left; width: 50%; line-height: 1.3rem;
 [data-dpr="2"] section.car_detail_btn>div { font-size: 32px; }
 [data-dpr="3"] section.car_detail_btn>div { font-size: 54px; }		
 section.car_detail_btn>div._l_price_btn { background-color: #2ab40f; }	
-section.car_detail_btn>div._sell_car_btn { background-color: #e2ae30; }
+section.car_detail_btn>div._sell_car_btn{ background-color: #e2ae30; }
+section.car_detail_btn>div._sell_car_btn>a{ color: #fff; }
 /*配置参数*/
 div.car_parameter { display: none; margin-bottom: 1.5rem; }
 div.car_parameter_kind { padding: 0.34rem 0; margin-bottom: 0.3125rem;
@@ -102,11 +103,11 @@ div.ask_box { position: fixed; top: 0.1562rem; left: 0.5rem;
 	right: 0.5rem; font-size: 14px; border-radius: 0.25rem; z-index: 9;
 	display: none; text-align: center; background-color: #fff; }
 /*div.sell_car_box { display: none; }	*/
-div.ask_box p.error_text { margin-top: 0.1562rem; padding-left: 0.7812rem;
+p.error_text { margin-top: 0.1562rem; padding-left: 0.7812rem;
 		text-align: left; font-size: 12px;
 		text-indent: .5rem; display: none; color: #d10310; font-style: italic;}
-[data-dpr="2"] div.ask_box p.error_text { font-size: 24px; }
-[data-dpr="3"] div.ask_box p.error_text { font-size: 36px; }
+[data-dpr="2"] p.error_text { font-size: 24px; }
+[data-dpr="3"] p.error_text { font-size: 36px; }
 [data-dpr="2"] div.ask_box { font-size: 28px; }	
 [data-dpr="3"] div.ask_box { font-size: 48px; }
 div.ask_box_head>h2 { padding: 0.32rem 0; font-size: 18px; }

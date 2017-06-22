@@ -92,14 +92,14 @@ $(function(){
 	})
 //更多品牌页子系列
 	//品牌子系列弹出
-	$('li.brand_details_item>a').tap(function(){
-		$(this).parents('div.filter_brand').find('aside.brand_series_con').hide();
-		$(this).parent().find('aside.brand_series_con').show();
-	});
+	// $('li.brand_details_item>a').tap(function(){
+	// 	$(this).parents('div.filter_brand').find('aside.brand_series_con').hide();
+	// 	$(this).parent().find('aside.brand_series_con').show();
+	// });
 	//子系列右滑动隐藏
-	$('aside.brand_series_con').on("swipeRight", function(){
-		$('aside.brand_series_con').hide();
-	});
+	// $('aside.brand_series_con').on("swipeRight", function(){
+	// 	$('aside.brand_series_con').hide();
+	// });
 
 //车辆详情页
 	//配置参数进入	
@@ -112,8 +112,34 @@ $(function(){
 		$(this).parents('div.car_parameter').hide();
 		$('.hidden_part').show();
 	})
+	$('dd.filter_set_price input').on('input change', function(){
+		var val = $(this).val();
+		    val = val.replace(/\D/g, '');
+		$(this).val(val);    
+	});
+	//自定义价格
+	$('.filter_set_price button').tap(function(){
+		var $filter_set_price = $('dd.filter_set_price');
+		var min = $filter_set_price.find('div.input_1>input').val();
+		var max = $filter_set_price.find('div.input_2>input').val();
+		var arr = [];
+		if (min == '' && max == '') {
+			$filter_set_price.parent().find('p.error_text').html('输入价格有误').show();
+		 	return false;
+		 }
+		if (min == '') { min = 0; }
+		if (max == '') { max = 999; }
+		if (parseInt(min) > parseInt(max)) {
+			var place = min;
+				min = max;
+				max = place;
+		}
+		arr[0] = min;
+		arr[1] = max;
+
+	});
 	//车辆详情页弹出框开启
-	$('.car_detail_btn>div').tap(function(){
+	$('div._l_price_btn').tap(function(){
 		var index = $(this).index();
 		$('div.car_detail_mask').show();
 		$('div.ask_box').eq(index).show();
@@ -126,7 +152,7 @@ $(function(){
 		$('body').removeClass('body_overflow');
 		$('div.ask_box').hide();
 		$('div.car_detail_mask').hide();
-	})
+	});
 	//获取验证码
 	var car_detail_code = true;
 	$('button.sell_get_code').tap(function(){
@@ -163,18 +189,18 @@ $(function(){
 			$box.find('p.error_text').html('手机号输入有误').show();
 		}
 	})
-	$('button.sell_car_commit').tap(function(){
-		var RE_phone = /^1[34578][\d]{9}/;
+	// $('button.sell_car_commit').tap(function(){
+	// 	var RE_phone = /^1[34578][\d]{9}/;
 
-		var $box = $(this).parents('div.ask_box');
-		var phone = $box.find('input.phone').val();
-		if ( RE_phone.test(phone) ) {
-			//验证验证码
+	// 	var $box = $(this).parents('div.ask_box');
+	// 	var phone = $box.find('input.phone').val();
+	// 	if ( RE_phone.test(phone) ) {
+	// 		//验证验证码
 			
-		}else {
-			$box.find('p.error_text').html('手机号输入有误').show();
-		}
-	})
+	// 	}else {
+	// 		$box.find('p.error_text').html('手机号输入有误').show();
+	// 	}
+	// })
 })
 
 

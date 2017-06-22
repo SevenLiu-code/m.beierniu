@@ -13,6 +13,8 @@
 				var	$box = $(obj).parents('div.ask_box');
 				var Rex_phone = /^1[34578][\d]{9}/; 
 				var phone_val = $box.find('input.phone').val();
+
+
 				var $this = $(obj);
 				if (phone_val == '') {
 					console.log(phone_val);
@@ -46,7 +48,7 @@
 						}
 					})	
 				}
-			}	
+			}		
 }
   
 	
