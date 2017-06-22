@@ -42,10 +42,33 @@ ul._car_process_list { display: flex; display: -webkit-flex;
 li._car_process_item { width: 33.3%; text-align: center; }
 li._car_process_item>div { width: 1.4375rem; height: 1.4375rem;
 	margin: 0 auto; background-size: 100%; }
-li._car_process_item>p{ margin-top: 0.1562rem; }
+li._car_process_item>p{ margin-top: 0.1562rem; font-size: 14px; }
+[data-dpr="2"] li._car_process_item>p, 
+[data-dpr="2"] div._car_knowledge_tit>h3{ font-size: 28px; }
+[data-dpr="3"] li._car_process_item>p,
+[data-dpr="3"] div._car_knowledge_tit>h3{ font-size: 42px; }
 li._car_process_item>div.commit_bg { background-image: url(../images/base/commit_bg.png); }
 li._car_process_item>div.goto_bg { background-image: url(../images/base/goto_bg.png); }
 li._car_process_item>div.sign_bg{ background-image: url(../images/base/sign_bg.png); }
+/*卖车小知识*/
+ul._car_knowledge_list {  }
+li._car_knowledge_item { padding: 0.2344rem 0; border-bottom: 1px solid #DCDCDC; }
+div._car_knowledge_tit { display: flex; display: -webkit-flex; align-content: center;
+ 		padding: 0 0.625rem; line-height: 0.625rem; }
+div._car_knowledge_tit>i { margin-left:1.8rem; line-height: 0.625rem;
+	font-size: 0.4375rem; color: #666; } 			
+div._car_knowledge_tit>h3 { color: #444; font-size: 14px; }							
+span._car_knowledge_tit_bg { display: inline-block; width: 0.625rem; height: 0.75rem; 
+		background-image: url(../images/base/_car_knowledge_tit_bg.png);
+		margin-right: 0.2344rem; background-size: 100%; }
+p._car_knowledge_text { overflow: hidden; margin: 0 0.625rem; padding: 0.0781rem;
+	line-height: 0.5rem; text-indent: 0.4688rem; color: #fff;
+	background-color: #FF8D8D; display: none; }	
+div.sale_car_mask { display: none; position: fixed; top: 0; bottom: 0; left: 0; right: 0;
+		background-color: rgba(0,0,0, .4); }
+div.sale_car_seccess>.ask_box_success { display: block; }		
+
+
 
 
 
