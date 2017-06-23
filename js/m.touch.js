@@ -70,7 +70,6 @@ $(function(){
 	})
 	//更多筛选关闭
 	$('a.filter_more_close').tap(function(){
-		$('div.filter_more .filter_details_list a').removeClass('active');
 		$('.filter_more').hide();
 		$('.hidden_part').show();
 		var bool = $('nav>a.filter_price, nav>a.filter_sort').hasClass('current');
