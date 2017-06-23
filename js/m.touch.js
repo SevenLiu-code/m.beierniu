@@ -212,7 +212,7 @@ $(function(){
 	})
 	//弹出框表单验证
 	$('button.l_price_commit').tap(function(){
-		var RE_phone = /^1[34578][\d]{9}/;
+		var RE_phone = /^1[34578][\d]{9}$/;
 		var Reg_ask_price =/^(([0-9]{1,3})|([0]\.\d{1,3}|[1-9][0-9]*\.\d{1,3}))$/;				
 						//不超过999万，最多三位小数
 		var $box = $(this).parents('div.ask_box');
