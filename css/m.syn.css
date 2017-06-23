@@ -77,7 +77,7 @@ section.ask_bg { background: url(../images/banner/ask_bg.png) no-repeat;
 section.ask_bg h3 { text-align: center; font-size: 0.5rem; color: #fff;
 		margin-top: .8rem; font-weight: 700; }	
 section.ask_kind_con { padding: 0.2rem 0; margin-top: 0.3125rem;
-	 background-color: #fff; }
+	 background-color: #fff; overflow: hidden; }
 div.ask_swiper_wrapper { padding-top: 0.1562rem; }	 
 ul.ask_kind_caption { position: relative; width: 100%; }
 ul.ask_kind_caption>li { width: 25%; border-radius: 0; opacity: 1;
