@@ -1,5 +1,5 @@
 /*返回头部*/
-header.return_header { background-color: #FF5757; 
+header.return_header { background-color: #FF5757; border: none;
  }
 header.return_header>a.return_iocn{ color: #fff; }
 header.return_header>p { color: #fff; line-height: 1.2rem; vertical-align: middle; }
@@ -9,14 +9,14 @@ header.return_header i.return_header_icon { display: inline-block; width: 0.8rem
 header.sale_car_header i.return_header_icon { background-image: url(../images/base/sale_car.png); }	
 /*我要卖车*/
 section.sale_car_bg { height: 4.6875rem; overflow: hidden;
-	background-image: url(../images/base/sale_car_bg.png); color: #fff;
+	background: url(../images/base/sale_car_bg.png) no-repeat; color: #fff;
 	background-size: 100%; text-align: center; font-size: 14px; }
 [data-dpr="2"] section.sale_car_bg { font-size: 28px; }
 [data-dpr="3"] section.sale_car_bg { font-size: 42px; }
 section.sale_car_bg h3 { margin-top: .8rem; font-size: .44rem; 
 	font-weight: bold; 
 }
-div.sale_sub { display: flex; display: -webkit-flex; width: 6rem; 
+div.sale_sub { display: flex; display: -webkit-flex; width: 6.5rem; 
   margin: 0.5rem auto 0 auto; position: relative; height: 0.9375rem;
   border: 1px solid #d10310;  font-size: .42rem;
 }
@@ -57,9 +57,9 @@ div._car_knowledge_tit { display: flex; display: -webkit-flex; align-content: ce
  		padding: 0 0.625rem; line-height: 0.625rem; }
 div._car_knowledge_tit>i { margin-left:1.8rem; line-height: 0.625rem;
 	font-size: 0.4375rem; color: #666; } 			
-div._car_knowledge_tit>h3 { color: #444; font-size: 14px; }							
+div._car_knowledge_tit>h3 { width: 70%; color: #444; font-size: 14px; }							
 span._car_knowledge_tit_bg { display: inline-block; width: 0.625rem; height: 0.75rem; 
-		background-image: url(../images/base/_car_knowledge_tit_bg.png);
+		background: url(../images/base/_car_knowledge_tit_bg.png) no-repeat;
 		margin-right: 0.2344rem; background-size: 100%; }
 p._car_knowledge_text { overflow: hidden; margin: 0 0.625rem; padding: 0.0781rem;
 	line-height: 0.5rem; text-indent: 0.4688rem; color: #fff;
