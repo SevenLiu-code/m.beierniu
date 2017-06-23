@@ -79,7 +79,7 @@ section.ask_bg h3 { text-align: center; font-size: 0.5rem; color: #fff;
 section.ask_kind_con { padding: 0.2rem 0; margin-top: 0.3125rem;
 	 background-color: #fff; overflow: hidden; }
 div.ask_swiper_wrapper { padding-top: 0.1562rem; }	 
-ul.ask_kind_caption { position: relative; width: 100%; }
+ul.ask_kind_caption { position: relative; width: 100%; padding-top: 0.1562rem; }
 ul.ask_kind_caption>li { width: 25%; border-radius: 0; opacity: 1;
  background-color: transparent; margin: 0 !important;  }
 ul.ask_kind_caption>li>a { padding: 0 0.1562rem; color: #535353; 
@@ -99,7 +99,8 @@ dt.ask_kind_tit>span { font-size: 14px; color: #333; }
 [data-dpr="3"] dt.ask_kind_tit>span,
 [data-dpr="3"] dd.ask_kind_desc { font-size: 42px; }	
 dd.ask_kind_desc { padding: 0.1562rem 0 0 0.5rem; text-indent: 0.42rem;
-			line-height: 0.4688rem; font-size: 14px; color: #666; }			 
+			line-height: 0.4688rem; font-size: 14px; color: #666;
+			line-height: 0.5469rem; }			 
 
 
 
