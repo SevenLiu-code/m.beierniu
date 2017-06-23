@@ -3,7 +3,6 @@ $(function(){
 	var homeSlide = new Swiper ('.swiper-home-slide', {
 	    loop: true,
 	    autoplay: 5000,
-	    // 如果需要分页器
 	    pagination: '.swiper-pagination'
   }) 
 	//车辆展示三栏触碰切换
@@ -11,7 +10,6 @@ $(function(){
 	    loop: true,
 	    pagination: '.swiper-pagination',
 	    paginationClickable: true,
-	    // 如果需要分页器
 	    paginationBulletRender: function (swiper, index, className) {
 	    	switch(index ){
 	    		case 0: return '<li class="' + className + '"><a href="javascript:;">' + '最新上架' + '</a></li>'
@@ -23,7 +21,6 @@ $(function(){
 	    	}
       		
   		}
-
   })
   //车辆详情页图片轮播
  	var car_details_swiper = new Swiper('.car-details-swiper', {
@@ -46,6 +43,26 @@ $(function(){
 	             ' / ' +
 	             '<span class="' + totalClassName + '"></span>';
   		}
-	})
+	});
+
+	//二手车问答页轮播
+	var swiper_ask_kind = new Swiper('.swiper-ask-kind', {
+		loop: true,
+	    pagination: '.swiper-pagination',
+	    paginationClickable: true,
+	    paginationBulletRender: function (swiper, index, className) {
+	    	switch(index ){
+	    		case 0: return '<li class="' + className + '"><a href="javascript:;">' + '买车卖车' + '</a></li>'
+	    				break;
+	    		case 1: return '<li class="' + className + '"><a href="javascript:;">' + '交易过户' + '</a></li>'
+	    				break;
+	    		case 2: return '<li class="' + className + '"><a href="javascript:;">' + '保养维修' + '</a></li>'
+	    				break;
+	    		case 3: return '<li class="' + className + '"><a href="javascript:;">' + '金融贷款' + '</a></li>'
+	    				break;		
+	    	}
+      		
+  		}
+	});
 })
 

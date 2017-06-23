@@ -8,11 +8,12 @@ header.return_header i.return_header_icon { display: inline-block; width: 0.8rem
  margin-right: 0.3125rem;}
 header.sale_car_header i.return_header_icon { background-image: url(../images/base/sale_car.png); }	
 /*我要卖车*/
-section.sale_car_bg { height: 4.6875rem; overflow: hidden;
-	background: url(../images/base/sale_car_bg.png) no-repeat; color: #fff;
-	background-size: 100%; text-align: center; font-size: 14px; }
-[data-dpr="2"] section.sale_car_bg { font-size: 28px; }
-[data-dpr="3"] section.sale_car_bg { font-size: 42px; }
+section.common_banner { height: 4.6875rem; overflow: hidden;
+	color: #fff; text-align: center; font-size: 14px; }
+section.sale_car_bg { background: url(../images/banner/sale_car_bg.png) no-repeat; 
+		 background-size: 100%; }	
+[data-dpr="2"] section.common_banner { font-size: 28px; }
+[data-dpr="3"] section.common_banner { font-size: 42px; }
 section.sale_car_bg h3 { margin-top: .8rem; font-size: .44rem; 
 	font-weight: bold; 
 }
@@ -69,8 +70,36 @@ div.sale_car_mask { display: none; position: fixed; top: 0; bottom: 0; left: 0; 
 		background-color: rgba(0,0,0, .4); }
 div.sale_car_seccess>.ask_box_success { display: block; }		
 
-
-
+/*二手车问答页*/
+header.ask_header i.return_header_icon { background-image: url(../images/base/ask.png); }
+section.ask_bg { background: url(../images/banner/ask_bg.png) no-repeat; 
+		 background-size: 100%; }	
+section.ask_bg h3 { text-align: center; font-size: 0.5rem; color: #fff;
+		margin-top: .8rem; font-weight: 700; }	
+section.ask_kind_con { padding: 0.2rem 0; margin-top: 0.3125rem;
+	 background-color: #fff; }
+div.ask_swiper_wrapper { padding-top: 0.1562rem; }	 
+ul.ask_kind_caption { position: relative; width: 100%; }
+ul.ask_kind_caption>li { width: 25%; border-radius: 0; opacity: 1;
+ background-color: transparent; margin: 0 !important;  }
+ul.ask_kind_caption>li>a { padding: 0 0.1562rem; color: #535353; 
+	font-size: 16px; line-height: 0.7812rem; padding-bottom: 0.1562rem; }
+[data-dpr="2"] ul.ask_kind_caption>li>a { color: #535353; font-size: 32px; }
+[data-dpr="3"] ul.ask_kind_caption>li>a { font-size: 48px; }
+ul.ask_kind_caption>li.swiper-pagination-bullet-active>a { 
+		border-bottom: 3px solid #d10310; }
+dl.ask_kind_dl { display: block; padding: 0.35rem 0.4688rem; 
+			border-bottom: 1px solid #d1d1d1; }
+div.ask_kind_item dl.ask_kind_dl:last-child { border-bottom: none; }			
+dt.ask_kind_tit>i { display: inline-block; padding: 0.0312rem 0.0781rem; color: #fff; 
+			background-color: #a6080c; margin-right: 0.2344rem; }
+dt.ask_kind_tit>span { font-size: 14px; color: #333; }
+[data-dpr="2"] dt.ask_kind_tit>span, 
+[data-dpr="2"] dd.ask_kind_desc { font-size: 28px; }
+[data-dpr="3"] dt.ask_kind_tit>span,
+[data-dpr="3"] dd.ask_kind_desc { font-size: 42px; }	
+dd.ask_kind_desc { padding: 0.1562rem 0 0 0.5rem; text-indent: 0.42rem;
+			line-height: 0.4688rem; font-size: 14px; color: #666; }			 
 
 
 
