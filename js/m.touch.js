@@ -7,7 +7,7 @@ $(function(){
 		$body.find('div.search_input_con').show();
 		$body.find('div.search_input_con form.h_search_form input').trigger('click').focus();
 	});
-	$('div.search_input_con a.search_input_close').doubleTap(function(){
+	$('div.search_input_con a.search_input_close').singleTap(function(){
 		var $body = $(this).parents('body');
 		$body.find('div.search_input_con').hide();
 		$body.find('header.head_index, div.main_container, footer').show();
