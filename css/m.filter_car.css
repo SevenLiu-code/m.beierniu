@@ -127,3 +127,6 @@ li.current_filter_item>a>i { margin-left: 0.2344rem; color: #aaa;
 [data-dpr="3"] div.current_filter_reset { font-size: 36px; }		
 /* 收索页车辆展示	*/
 div.buy_car_show { background-color: #fff; overflow: hidden; }
+/*搜索未找到*/
+p.no_found { margin-top: 0.2344rem; text-align: center; }
+p.no_found>span { padding: 0 0.1562rem; color: #d10310; }
