@@ -64,9 +64,9 @@ div.filter_more { display: none; padding-bottom: 0.4688rem;
 .cover_head, div.car_parameter_head { display:flex; display: -webkit-flex; 
 	padding: 0 0.4688rem; border-bottom: 1px solid #dbdbdb; line-height: 1.2rem; 
 	background-color: #fff; align-items: center; }
-.cover_head>a, div.car_parameter_head>a { display: block;width: 10%; font-size: .8rem;
+.cover_head>a, div.car_parameter_head>a { display: block;width: 8%; font-size: .8rem;
 	 color: #d10310; text-align: center; }
-.cover_head>p, div.car_parameter_head>p { width: 83%; text-align: center;
+.cover_head>p, div.car_parameter_head>p { width: 84%; text-align: center;
 		color: #3c3c3c; font-size: 0.46rem; }
 ul.filter_more_btn { position: fixed; height: 1.3281rem; bottom: 0;left: 0; right: 0;
 				display: flex; display: -webkit-flex; text-align: center;
