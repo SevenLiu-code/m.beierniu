@@ -185,9 +185,11 @@ div.input_full input, div.input_full textarea { width: 100%; font-size: 14px;
 		border: 1px solid #a2a2a2; text-indent: 0.4688rem; line-height: 0.5625rem;
 		color: #333;  padding-top: 0.1562rem; } 
 div.input_full textarea { text-indent: 0; padding-left: 0.4688rem; }		
-div.input_half { justify-content: space-between; }
+div.input_half { display: relative; justify-content: space-between; }
+div.input_half>i { position: absolute; right: 0.3125rem; top: 0.35rem;
+		color: #666; }
 div.input_half select { width: 47%; text-indent: 0.4688rem; font-size: 14px;
-		border: 1px solid #a2a2a2; appearance:button;
+		border: 1px solid #a2a2a2; appearance:button; color: #666;
 			-moz-appearance:button; /* Firefox */
 			-webkit-appearance:button; /* Safari 和 Chrome */ }
 div.input_half select>option { display: inline-block; width: 100%; font-size: 14px; }
