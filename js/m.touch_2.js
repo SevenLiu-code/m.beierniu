@@ -43,7 +43,6 @@ $(function(){
 	//私人定制页获取验证码
 	var costom_form_get_code = true;
 	$('.costom_form button.get_code').tap(function(){
-
 		var $this = $(this);
 		var Rex_phone = /^1[34578][\d]{9}$/;
 		var $box = $(this).parents('.form_box');
@@ -63,14 +62,13 @@ $(function(){
 						async : false,
 						dataType:"json",
 						success: function(data) {
-							car_detail_code = false;
 							$box.find('p.phone_error_text').html("发送成功").show();
 							var seconds = 60;
-							 costom_waiting = setInterval(function(){
+							 waiting = setInterval(function(){
 								seconds--;
 								$this.html('重新发送（' + seconds + '）');
 								if (seconds <= 0) { 
-									clearInterval(costom_waiting);
+									clearInterval(waiting);
 									$this.html('获取验证码');
 									costom_form_get_code = true;
 									 }
@@ -95,6 +93,7 @@ $(function(){
 		 	var form_arr = {};
 		 	$box.find('input, textarea, select').each(function(index, element){
 		 		var name = $(element).attr('name');
+		 		if (name == 'code') { return; }
 		 		form_arr[name] = $(element).val();
 		 	});
 		 	$.ajax({
@@ -112,13 +111,87 @@ $(function(){
 			})	
 		 }
 	})
-	//私人定制页表单提交成功返回
-	$('.custom_inner a.return').tap(function(){
-		clearInterval(costom_waiting);
+	
+
+//寻求合作页
+	//寻求合作页获取验证码
+	var coopera_form_get_code = true;
+	$('.coopera_form button.get_code').tap(function(){
+		var $this = $(this);
+		var Rex_phone = /^1[34578][\d]{9}$/;
+		var $box = $(this).parents('.form_box');
+		var phone = $box.find('input.phone').val();
+		if (coopera_form_get_code) {
+			if (phone == '' || phone.length == 0) { 
+					$box.find('p.phone_error_text').html('请输入手机号码').show();
+				 }else if (!Rex_phone.test(phone)){
+				 	$box.find('p.phone_error_text').html('您输入的手机号码有误').show();
+				 }else {
+				 	coopera_form_get_code = false;
+				 	$.ajax({
+						cache : true,
+						type : "POST",
+						url : "",
+						data : "",
+						async : false,
+						dataType:"json",
+						success: function(data) {
+							$box.find('p.phone_error_text').html("发送成功").show();
+							var seconds = 60;
+							 waiting = setInterval(function(){
+								seconds--;
+								$this.html('重新发送（' + seconds + '）');
+								if (seconds <= 0) { 
+									clearInterval(waiting);
+									$this.html('获取验证码');
+									coopera_form_get_code = true;
+									 }
+							}, 1000)
+						}
+					})	
+				 }
+		}
+	});	
+	//寻求合作页表单提交
+	$('.coopera_form button.form_commit').tap(function(){
+		var $this = $(this);
+		var Rex_phone = /^1[34578][\d]{9}$/;
+		var $box = $(this).parents('.coopera_inner');
+		var phone = $box.find('input.phone').val();
+		if (phone == '' || phone.length == 0) { 
+			$box.find('p.phone_error_text').html('请输入手机号码').show();
+		 }else if (!Rex_phone.test(phone)){
+		 	$box.find('p.phone_error_text').html('您输入的手机号码有误').show();
+		 }else{
+		 	//判断验证码是否验证成功
+		 	var form_arr = {};
+		 	$box.find('input, textarea').each(function(index, element){
+		 		var name = $(element).attr('name');
+		 		if (name == 'code') { return; }
+		 		form_arr[name] = $(element).val();
+		 	});
+		 	$.ajax({
+				cache : true,
+				type : "POST",
+				url : "",
+				data : form_arr,
+				async : false,
+				dataType:"json",
+				success: function(data) {
+					$box.find('p.phone_error_text').hide();
+					$box.find('.coopera_form_con').hide();
+					$box.find('.ask_box_success').show();
+				}
+			})	
+		 }
+	})
+
+	//表单页表单提交成功返回
+	$('.form_con_inner a.return').tap(function(){
+		clearInterval(waiting);
 		costom_form_get_code = true;
 		$('button.get_code').html('获取验证码');
-		$('.custom_inner .custom_form_con').show();
-		$('.custom_inner .ask_box_success').hide();
-
+		$('.form_con_inner .form_input_con').show();
+		$('.form_con_inner .ask_box_success').hide();
 	})
 })
