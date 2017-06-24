@@ -184,6 +184,7 @@ div.form_row p.error_text { position: absolute; top: 0.2rem; right: 0.4688rem; }
 div.input_full input, div.input_full textarea { width: 100%; font-size: 14px; 
 		border: 1px solid #a2a2a2; text-indent: 0.4688rem; line-height: 0.5625rem;
 		color: #333;  padding-top: 0.1562rem; } 
+div.input_full textarea { text-indent: 0; padding-left: 0.4688rem; }		
 div.input_half { justify-content: space-between; }
 div.input_half select { width: 47%; text-indent: 0.4688rem; font-size: 14px;
 		border: 1px solid #a2a2a2; }
